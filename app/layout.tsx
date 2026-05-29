@@ -25,12 +25,12 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="deaber funnkaber "
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      lang="de" /* Hier war auch ein kleiner Tippfehler im Sprachcode, gleich korrigiert */
+      className={`${geistSans.variable} ${geistMono.variable} antialiased`}
     >
-      <body className="min-h-full flex flex-col">
+      <body className="bg-[var(--color-custom-gray)] min-h-screen text-[#171717] antialiased">
         <MainNav />
-        {children}
+        <main className="flex-1">{children}</main>
       </body>
     </html>
   );
