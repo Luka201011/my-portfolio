@@ -27,24 +27,6 @@ body {
   height: auto;
 }
 
-/* Home Page Styles */
-
-.Homeh1 {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.Homeh2 {
-  font-size: 1.25rem;
-  font-weight: normal;
-}
-
-.Homeimg {
-  width: 250px;
-  height: auto;
-  border-radius: 20px;
-}
-
 /* flex Utility classes */
 
 .flex-row {
@@ -73,8 +55,46 @@ body {
   margin-top: 60px;
 }
 
+.marginT-4 {
+  margin-top: 40px;
+}
+
 /* padding utility class */
 
 .padding-3 {
   padding: 30px;
 }
+
+/* section styles overall */
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.card-body {
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+  height: auto;
+  padding: 10px;
+}
+
+/* Home Page Styles */
+
+.Homeh1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.Homeh2 {
+  font-size: 1.25rem;
+  font-weight: normal;
+}
+
+.Homeimg {
+  width: 250px;
+  height: auto;
+  border-radius: 20px;
+}
+
+/* about me styles */

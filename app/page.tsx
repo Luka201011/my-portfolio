@@ -1,3 +1,8 @@
+import AboutSection from "../components/sections/about";
+import CompetencesSection from "../components/sections/competences";
+import ProjectsSection from "../components/sections/projects";
+import ContactSection from "../components/sections/contact";
+
 export default function Home() {
   return (
     <>
@@ -27,6 +32,14 @@ export default function Home() {
           </p>
         </div>
       </div>
+
+      <AboutSection />
+
+      <CompetencesSection />
+
+      <ProjectsSection />
+
+      <ContactSection />
     </>
   );
 }
