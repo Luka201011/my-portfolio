@@ -1,8 +1,34 @@
 export default function CompetencesSection() {
   return (
-    <section id="competences" className="">
-      <h2 className="center-Text title">Kompetenzen</h2>
-      <p>Hier kommt dein Text hin...</p>
+    <section id="competences" className="marginT-4">
+      <div>
+        <h2 className="center-Text title">Kompetenzen</h2>
+      </div>
+      <div className="center marginT-4 paddingL-3 paddingR-3 flex-col">
+        <div className="card-body center-Text flex-row center">
+          <p className="text-competences">HTML</p>
+          <img
+            src="/klicken.png"
+            alt="Hinweis das es anklickbar ist"
+            className="klicken-icon"
+          />
+        </div>
+        <div className="card-body center-Text marginT-4 ">
+          <p className="text-competences">CSS</p>
+        </div>
+        <div className="card-body center-Text marginT-4">
+          <p className="text-competences">JavaScript</p>
+        </div>
+        <div className="card-body center-Text marginT-4">
+          <p className="text-competences">Angular</p>
+        </div>
+        <div className="card-body center-Text marginT-4">
+          <p className="text-competences">TypeScript</p>
+        </div>
+        <div className="card-body center-Text marginT-4">
+          <p className="text-competences">SDX</p>
+        </div>
+      </div>
     </section>
   );
 }
