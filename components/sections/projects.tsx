@@ -54,6 +54,33 @@ export default function ProjectsSection() {
             </div>
           </div>
         </div>
+        <div className="card-body center-Text marginT-4 padding-2">
+          <div>
+            <h2 className="title-projects">Appes Team (Frontend)</h2>
+          </div>
+          <div className="title-projects-line"></div>
+          <div>
+            <p>
+              <strong>Host:</strong> Petre Tudor
+            </p>
+          </div>
+          <div>
+            <p className="marginT-1">
+              {" "}
+              Das Apps Team bot mir einen praxisnahen Einblick in die
+              Entwicklung moderner Webapplikationen. Mit Technologien wie
+              Next.js konnte ich mein technisches Wissen gezielt erweitern und
+              erste eigene Komponenten entwickeln. Zudem lernte ich agile
+              Arbeitsmethoden wie Scrum kennen, die die Zusammenarbeit im Team
+              erleichtern. Ein besonderes Highlight war die Mitarbeit an einem
+              interaktiven Tool zur Unterstützung von Sponsoring-Aktivitäten bei
+              Swisscom.
+            </p>
+            <div className="btn marginT-3">
+              <p>Mehr Infos</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
