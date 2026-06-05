@@ -40,6 +40,9 @@ export default function AboutSection() {
             <strong>meine Kultur zu pflegen und Freundschaften</strong>{" "}
             aufzubauen. Zusätzlich spiele ich <strong>gerne Basketball.</strong>
           </p>
+          <div className="btn marginT-1 center center-Text">
+            <p>Mehr anzeigen</p>
+          </div>
         </div>
       </div>
     </section>

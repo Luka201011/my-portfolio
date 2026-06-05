@@ -119,7 +119,7 @@ export default function ContactSection() {
         </div>
       </div>
       <footer className="footer marginT-4">
-        <div className="center-Text">
+        <div className="center-Text btn">
           <a
             href="./Lebenslauf_von_Luka_Jevremovic.pdf"
             target="_blank"

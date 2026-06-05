@@ -49,6 +49,9 @@ export default function ProjectsSection() {
               Steps fühlte ich mich gut auf das Berufsleben während meiner
               Ausbildung vorbereitet.
             </p>
+            <div className="btn marginT-3">
+              <p>Mehr Infos</p>
+            </div>
           </div>
         </div>
       </div>

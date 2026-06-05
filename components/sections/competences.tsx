@@ -13,20 +13,23 @@ export default function CompetencesSection() {
             className="klicken-icon"
           />
         </div>
-        <div className="card-body-competences center-Text center marginT-4 ">
+        <div className="card-body-competences center-Text center marginT-3 ">
           <p className="text-competences">CSS</p>
         </div>
-        <div className="card-body-competences center-Text center marginT-4">
+        <div className="card-body-competences center-Text center marginT-3">
           <p className="text-competences">JavaScript</p>
         </div>
-        <div className="card-body-competences center-Text center marginT-4">
+        <div className="card-body-competences center-Text center marginT-3">
           <p className="text-competences">Angular</p>
         </div>
-        <div className="card-body-competences center-Text center marginT-4">
+        <div className="card-body-competences center-Text center marginT-3">
           <p className="text-competences">TypeScript</p>
         </div>
-        <div className="card-body-competences center-Text center marginT-4">
+        <div className="card-body-competences center-Text center marginT-3">
           <p className="text-competences">SDX</p>
+        </div>
+        <div className="btn marginT-3">
+          <p>Mehr anzeigen</p>
         </div>
       </div>
     </section>
