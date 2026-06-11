@@ -24,7 +24,7 @@ export default function Home() {
             <h1 className="Homeh1">1. Lehrjahr</h1>
           </div>
         </div>
-        <div className="center marginT-6 padding-3 center-Text">
+        <div className="center marginT-6 padding-3 text-center">
           <p>
             Ich bin im ersten Lehrjahr als Applikationsentwickler bei Swisscom
             tätig. Es freut mich, dass du auf meine Website bist und wünsche dir

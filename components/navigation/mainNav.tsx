@@ -1,74 +1,101 @@
-"client use";
+"use client";
 
-const MainNav: React.FC = async () => {
+import { useState } from "react";
+
+const MainNav: React.FC = () => {
+  // State für das mobile Burger-Menü
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <>
-      <div>
-        <nav className="navbar-container" id="Navigation">
-          <div className="">
-            <div className="flex-row gap-4">
-              <a href="index.html">
-                <img src="/flagge.png" alt="Deutsch" className="flag-icon" />
-              </a>
-              <a href="index-englisch.html">
-                <img
-                  src="/vereinigtes-konigreich.png"
-                  alt="Englisch"
-                  className="flag-icon"
-                />
-              </a>
-            </div>
-
-            <button
-              className="navbar-toggler burger"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarLinks"
-              aria-controls="navbarLinks"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-              id="burger"
-            >
-              <span className="navbar-toggler-icon"></span>
-            </button>
-
-            <div className="collapse navbar-collapse" id="navbarLinks">
-              <ul className="navbar-nav ms-auto">
-                <li className="nav-item">
-                  <a className="nav-link" href="#Navigation">
-                    Home
-                  </a>
-                </li>
-
-                <li className="nav-item">
-                  <a className="nav-link" href="#Titel-übermich">
-                    Über mich
-                  </a>
-                </li>
-
-                <li className="nav-item">
-                  <a className="nav-link" href="#Titel-kompetenzen">
-                    Kompetenzen
-                  </a>
-                </li>
-
-                <li className="nav-item">
-                  <a className="nav-link" href="#Titel-Projekte">
-                    Projekte
-                  </a>
-                </li>
-
-                <li className="nav-item">
-                  <a className="nav-link" href="#Titel-Kontakt">
-                    Kontakt
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
+    <nav
+      className="navbar-container flex flex-wrap items-center justify-between px-6 relative"
+      id="Navigation"
+    >
+      {/* 🇩🇪🇬🇧 Sprachauswahl / Flaggen */}
+      <div className="flex items-center gap-4">
+        <a href="/">
+          <img
+            src="/flagge.png"
+            alt="Deutsch"
+            className="flag-icon hover:opacity-80 transition-opacity"
+          />
+        </a>
+        <a href="/en">
+          <img
+            src="/vereinigtes-konigreich.png"
+            alt="Englisch"
+            className="flag-icon hover:opacity-80 transition-opacity"
+          />
+        </a>
       </div>
-    </>
+
+      {/* 🍔 Burger Button (sichtbar auf mobilen Geräten) */}
+      <button
+        className="md:hidden flex flex-col justify-center items-center gap-1.5 w-8 h-8 cursor-pointer z-50"
+        type="button"
+        onClick={() => setIsOpen(!isOpen)}
+        aria-label="Navigation umschalten"
+      >
+        {/* Schicke, cleane Linien für den Burger via Tailwind */}
+        <span
+          className={`h-0.5 w-6 bg-white transition-transform duration-300 ${isOpen ? "rotate-45 translate-y-2" : ""}`}
+        ></span>
+        <span
+          className={`h-0.5 w-6 bg-white transition-opacity duration-300 ${isOpen ? "opacity-0" : ""}`}
+        ></span>
+        <span
+          className={`h-0.5 w-6 bg-white transition-transform duration-300 ${isOpen ? "-rotate-45 -translate-y-2" : ""}`}
+        ></span>
+      </button>
+
+      {/* 🔗 Navigationslinks (Flexbox auf Desktop, Dropdown auf Mobile) */}
+      <div
+        className={`w-full md:w-auto md:flex items-center mt-4 md:mt-0 ${isOpen ? "block" : "hidden md:block"}`}
+      >
+        <ul className="flex flex-col md:flex-row gap-4 md:gap-8 list-none text-white font-medium">
+          <li>
+            <a
+              className="hover:text-blue-200 transition-colors block py-2 md:py-0"
+              href="#Navigation"
+            >
+              Home
+            </a>
+          </li>
+          <li>
+            <a
+              className="hover:text-blue-200 transition-colors block py-2 md:py-0"
+              href="#about"
+            >
+              Über mich
+            </a>
+          </li>
+          <li>
+            <a
+              className="hover:text-blue-200 transition-colors block py-2 md:py-0"
+              href="#competences"
+            >
+              Kompetenzen
+            </a>
+          </li>
+          <li>
+            <a
+              className="hover:text-blue-200 transition-colors block py-2 md:py-0"
+              href="#projects"
+            >
+              Projekte
+            </a>
+          </li>
+          <li>
+            <a
+              className="hover:text-blue-200 transition-colors block py-2 md:py-0"
+              href="#contact"
+            >
+              Kontakt
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
   );
 };
 

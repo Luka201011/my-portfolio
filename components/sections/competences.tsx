@@ -15,7 +15,7 @@ export default function CompetencesSection() {
   return (
     <section id="competences" className="marginT-4">
       <div>
-        <h2 className="center-Text title">Kompetenzen</h2>
+        <h2 className="text-center title">Kompetenzen</h2>
       </div>
       <div className="center marginT-4 paddingL-3 paddingR-3 flex-col">
         {/* HTML Karte */}

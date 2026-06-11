@@ -2,10 +2,10 @@ export default function ContactSection() {
   return (
     <section id="contact" className="marginT-4">
       <div>
-        <h2 className="center-Text title">Kontakt</h2>
+        <h2 className="text-center title">Kontakt</h2>
       </div>
       <div className="center marginT-4 paddingL-3 paddingR-3 flex-col">
-        <div className="card-body-contact center-Text center flex-col">
+        <div className="card-body-contact text-center center flex-col">
           <div>
             <h2 className="title-contact">Aktueller Arbeitsort</h2>
           </div>
@@ -22,7 +22,7 @@ export default function ContactSection() {
         </div>
         <div className="card-body-contact center flex-col marginT-4">
           <div>
-            <h2 className="title-contact center-Text">Kontaktdaten</h2>
+            <h2 className="title-contact text-center">Kontaktdaten</h2>
           </div>
           <div className="text-field left marginT-2 flex-col">
             <div className="flex-row gap-4">
@@ -97,7 +97,7 @@ export default function ContactSection() {
         </div>
         <div className="card-body-contact center flex-col marginT-4">
           <div>
-            <h2 className="title-contact center-Text">Rand Informationen</h2>
+            <h2 className="title-contact text-center">Rand Informationen</h2>
           </div>
           <div className="text-field left marginT-2 flex-col">
             <div className="flex-row gap-4">
@@ -119,7 +119,7 @@ export default function ContactSection() {
         </div>
       </div>
       <footer className="footer marginT-4">
-        <div className="center-Text btn">
+        <div className="text-center btn">
           <a
             href="./Lebenslauf_Luka_Jevremovic.pdf"
             target="_blank"

@@ -1,9 +1,7 @@
 @import "tailwindcss";
 
 @theme {
-  /* Hier definierst du dein festes Grau als RGB */
   --color-custom-gray: rgb(200, 200, 200);
-
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
@@ -18,7 +16,7 @@ body {
 /* Navigation Bar Styles */
 .navbar-container {
   background-color: rgb(135, 135, 135);
-  padding: 20px 20px;
+  padding: 20px;
   height: 72px;
 }
 
@@ -57,10 +55,6 @@ body {
   align-items: flex-end;
 }
 
-.center-Text {
-  text-align: center;
-}
-
 /* margin utility class */
 
 .marginT-6 {
@@ -81,6 +75,10 @@ body {
 
 .marginT-1 {
   margin-top: 10px;
+}
+
+marginB-2 {
+  margin-bottom: 20px;
 }
 
 /* padding utility class */
@@ -105,8 +103,7 @@ body {
   padding-right: 30px;
 }
 
-/* section styles overall */
-
+/* Section Styles Overall */
 .title {
   font-size: 2rem;
   font-weight: bold;
@@ -115,22 +112,31 @@ body {
 .card-body {
   background-color: rgb(255, 255, 255);
   border-radius: 15px;
-  height: auto;
-  padding: 10px;
+  padding: 20px;
 }
 
-.btn {
+.btn,
+.btn-2 {
   padding: 10px 15px;
   border-radius: 2vh;
-  background: #3a5f9a;
-  color: white;
   font-size: 1rem;
+  width: fit-content;
   cursor: pointer;
   transition: background 0.3s ease;
 }
 
+.btn {
+  background: #3a5f9a;
+  color: white;
+}
+
 .btn:hover {
   background: #619de2;
+}
+
+.btn-2 {
+  background: #767d88;
+  color: white;
 }
 
 /* Home Page Styles */
@@ -152,33 +158,87 @@ body {
 }
 
 /* about me styles */
-
 .aboutimg {
   width: 250px;
   height: auto;
   border-radius: 120px;
 }
 
-/* Competences Page Styles */
+.card-body-about {
+  position: relative;
+  width: 100%;
+  height: 450px;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease-in-out;
+}
 
+.card-body-about.flipped {
+  transform: rotateY(180deg);
+}
+
+.front-card-about,
+.back-card-about {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* Das hier sorgt dafür, dass die Rückseite unsichtbar ist, wenn sie weggedreht ist */
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden; /* Für Safari-Unterstützung */
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* --- VORDERSEITE --- */
+.front-card-about {
+  background-color: #f5f5f5;
+  width: 100%;
+  height: 350px; /* Tipp: Setz das am besten auch auf 100%, damit Vorder- und Rückseite gleich gross sind! */
+  pointer-events: auto;
+}
+
+/* Wenn gedreht: Vorderseite reagiert auf keine Klicks mehr */
+.card-body-about.flipped .front-card-about {
+  pointer-events: none;
+}
+
+/* --- RÜCKSEITE --- */
+.back-card-about {
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%;
+  color: #171717;
+  transform: rotateY(180deg);
+  /* WICHTIG: Blockiert Klicks auf die Videos, solange die Karte nicht gedreht ist */
+  pointer-events: none;
+}
+
+/* Wenn gedreht: Rückseite und Videos werden klickbar */
+.card-body-about.flipped .back-card-about {
+  pointer-events: auto;
+}
+
+/* Competences Page Styles */
 .card-body-competences {
-  background-color: #f5f5f5; /* Dein helles Grau als Standard für die Front */
+  background-color: #f5f5f5;
   border-radius: 15px;
   height: 100px;
   width: 100%;
-  position: relative; /* Wichtig, damit Front und Back darin verankert bleiben */
+  position: relative;
   perspective: 1000px;
   transform-style: preserve-3d;
   transition: transform 0.6s ease-in-out;
   cursor: pointer;
 }
 
-/* Wenn aktiv (flipped), dreht sich die gesamte Karte um die Y-Achse */
 .card-body-competences.flipped {
   transform: rotateY(180deg);
 }
 
-/* Vorder- und Rückseite exakt übereinanderlegen */
 .front-card-competences,
 .back-card-competences {
   position: absolute;
@@ -191,11 +251,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.front-card-competences {
-  flex-direction: row;
-  gap: 0.5rem;
 }
 
 .back-card-competences {
