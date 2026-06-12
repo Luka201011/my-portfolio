@@ -28,7 +28,7 @@ export default function ContactSection() {
             <h2 className="font-bold text-base text-center">Kontaktdaten</h2>
           </div>
           <div className="text-field flex justify-start items-start mt-5 flex-col">
-            <div className="flex-row gap-4">
+            <div className="flex-row flex gap-4">
               <div>
                 <img
                   src="/ausweis.png"
@@ -40,7 +40,7 @@ export default function ContactSection() {
                 <p>Luka Jevremovic</p>
               </div>
             </div>
-            <div className="flex-row gap-4 mt-2">
+            <div className="flex-row flex gap-4 mt-2">
               <div>
                 <img
                   src="/anruf.png"
@@ -52,17 +52,20 @@ export default function ContactSection() {
                 <p>079 412 94 62</p>
               </div>
             </div>
-            <div className="flex-row gap-4 mt-2">
+            <div className="flex-row flex gap-4 mt-2">
               <div>
                 <img src="/mail.png" alt="Mail Icon" className="contact-icon" />
               </div>
               <div>
-                <a href="mailto:luka.jevremovic@swisscom.com">
+                <a
+                  href="mailto:luka.jevremovic@swisscom.com"
+                  className="underline"
+                >
                   luka.jevremovic@swisscom.com
                 </a>
               </div>
             </div>
-            <div className="flex-row gap-4 mt-2">
+            <div className="flex-row flex gap-4 mt-2">
               <div>
                 <img
                   src="/biografie.png"
@@ -72,6 +75,7 @@ export default function ContactSection() {
               </div>
               <div>
                 <a
+                  className="underline"
                   href="https://neli.swisscom.com/profile/%5Bme%5D/detail"
                   target="_blank"
                 >
@@ -79,7 +83,7 @@ export default function ContactSection() {
                 </a>
               </div>
             </div>
-            <div className="flex-row gap-4 mt-2">
+            <div className="flex-row flex gap-4 mt-2">
               <div>
                 <img
                   src="/linkedin.png"
@@ -89,6 +93,7 @@ export default function ContactSection() {
               </div>
               <div>
                 <a
+                  className="underline"
                   href="https://www.linkedin.com/in/luka-jevremovic-3994a5379/"
                   target="_blank"
                 >
