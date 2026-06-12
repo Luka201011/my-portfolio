@@ -11,14 +11,14 @@ export default function ProjectsSection() {
     }
   };
   return (
-    <section id="projects" className="marginT-4">
+    <section id="projects" className="mt-10">
       <div>
-        <h2 className="text-center title">Projekte</h2>
+        <h2 className="text-center text-4xl font-bold">Projekte</h2>
       </div>
-      <div className="center marginT-4 paddingL-3 paddingR-3 flex-col">
-        <div className="card-body text-center padding-2">
+      <div className="flex justify-center items-center mt-10 pl-7 pr-7 flex-col">
+        <div className="card-body text-center p-10">
           <div>
-            <h2 className="title-projects">First Steps 2025 NEX-14</h2>
+            <h2 className="text-lg font-bold">First Steps 2025 NEX-14</h2>
           </div>
           <div className="title-projects-line"></div>
           <div>
@@ -27,7 +27,7 @@ export default function ProjectsSection() {
             </p>
           </div>
           <div>
-            <p className="marginT-1">
+            <p className="mt-2">
               {" "}
               In den First Steps wurden mir die grundlegenden Kenntnisse und
               Erwartungen vermittelt. Ich lernte die wichtigsten Tools kennen
@@ -41,11 +41,11 @@ export default function ProjectsSection() {
         </div>
 
         <div
-          className={`card-body-project text-center marginT-4 padding-2 ${activeCard === "minion" ? "flipped" : ""}`}
+          className={`card-body-project text-center mt-10 p-10 ${activeCard === "minion" ? "flipped" : ""}`}
         >
           <div className="front-card-project flex-col">
             <div>
-              <h2 className="title-projects">IT-Onboarding Team Minion</h2>
+              <h2 className="text-lg font-bold">IT-Onboarding Team Minion</h2>
             </div>
             <div className="title-projects-line"></div>
             <div>
@@ -54,7 +54,7 @@ export default function ProjectsSection() {
               </p>
             </div>
             <div>
-              <p className="marginT-1">
+              <p className="mt-2">
                 {" "}
                 Das IT-Onboarding-Projekt hat mir erste technische Grundlagen
                 der Webentwicklung, darunter HTML, CSS, JavaScript, TypeScript
@@ -65,7 +65,7 @@ export default function ProjectsSection() {
                 vorbereitet zu sein.
               </p>
               <div
-                className="btn justify-self-center marginT-3"
+                className="btn justify-self-center mt-8"
                 onClick={() => handleFlip("minion")}
               >
                 <p>Mehr Infos</p>
@@ -74,7 +74,7 @@ export default function ProjectsSection() {
           </div>
           <div className="back-card-project flex-col">
             <div>
-              <h2 className="title-projects">Meine Arbeit</h2>
+              <h2 className="text-lg font-bold">Meine Arbeit</h2>
             </div>
             <div className="title-projects-line"></div>
             <div className="m-2">
@@ -109,7 +109,7 @@ export default function ProjectsSection() {
               </div>
             </div>
             <div
-              className="btn-2 marginT-1 center text-center"
+              className="btn-2 mt-2 justify-self-center text-center"
               onClick={() => handleFlip("minion")}
             >
               <p>zurück</p>
@@ -118,11 +118,11 @@ export default function ProjectsSection() {
         </div>
 
         <div
-          className={`card-body-project text-center marginT-4 padding-2 ${activeCard === "apps" ? "flipped" : ""}`}
+          className={`card-body-project text-center mt-10 p-10 ${activeCard === "apps" ? "flipped" : ""}`}
         >
           <div className="front-card-project">
             <div>
-              <h2 className="title-projects">Appes Team (Frontend)</h2>
+              <h2 className="text-lg font-bold">Appes Team (Frontend)</h2>
             </div>
             <div className="title-projects-line"></div>
             <div>
@@ -131,7 +131,7 @@ export default function ProjectsSection() {
               </p>
             </div>
             <div>
-              <p className="marginT-1">
+              <p className="mt-2">
                 {" "}
                 Das Apps Team gab mir einen praxisnahen Einblick in die
                 Entwicklung moderner Webapplikationen. Mit Technologien wie
@@ -142,7 +142,7 @@ export default function ProjectsSection() {
                 Sponsoring-Aktivitäten bei Swisscom.
               </p>
               <div
-                className="btn justify-self-center marginT-3"
+                className="btn justify-self-center mt-8"
                 onClick={() => handleFlip("apps")}
               >
                 <p>Mehr Infos</p>
@@ -151,7 +151,7 @@ export default function ProjectsSection() {
           </div>
           <div className="back-card-project flex-col">
             <div>
-              <h2 className="title-projects">Meine Arbeit</h2>
+              <h2 className="text-lg font-bold">Meine Arbeit</h2>
             </div>
             <div className="title-projects-line"></div>
             <div className="m-2">
@@ -164,7 +164,7 @@ export default function ProjectsSection() {
               </div>
             </div>
             <div
-              className="btn-2 marginT-1 center text-center"
+              className="btn-2 mt-2 flex justify-center items-center text-center"
               onClick={() => handleFlip("apps")}
             >
               <p>zurück</p>

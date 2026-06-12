@@ -25,89 +25,7 @@ body {
   height: auto;
 }
 
-/* flex Utility classes */
-
-.flex-row {
-  display: flex;
-  flex-direction: row;
-}
-
-.flex-col {
-  display: flex;
-  flex-direction: column;
-}
-
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.left {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-
-.right {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-}
-
-/* margin utility class */
-
-.marginT-6 {
-  margin-top: 60px;
-}
-
-.marginT-4 {
-  margin-top: 40px;
-}
-
-.marginT-3 {
-  margin-top: 30px;
-}
-
-.marginT-2 {
-  margin-top: 20px;
-}
-
-.marginT-1 {
-  margin-top: 10px;
-}
-
-marginB-2 {
-  margin-bottom: 20px;
-}
-
-/* padding utility class */
-
-.padding-3 {
-  padding: 30px;
-}
-
-.padding-2 {
-  padding: 20px;
-}
-
-.padding-1 {
-  padding: 10px;
-}
-
-.paddingL-3 {
-  padding-left: 30px;
-}
-
-.paddingR-3 {
-  padding-right: 30px;
-}
-
 /* Section Styles Overall */
-.title {
-  font-size: 2rem;
-  font-weight: bold;
-}
 
 .card-body {
   background-color: rgb(255, 255, 255);
@@ -141,16 +59,6 @@ marginB-2 {
 
 /* Home Page Styles */
 
-.Homeh1 {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.Homeh2 {
-  font-size: 1.25rem;
-  font-weight: normal;
-}
-
 .Homeimg {
   width: 250px;
   height: auto;
@@ -182,7 +90,6 @@ marginB-2 {
   position: absolute;
   top: 0;
   left: 0;
-  /* Das hier sorgt dafür, dass die Rückseite unsichtbar ist, wenn sie weggedreht ist */
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   border-radius: 15px;
@@ -193,31 +100,26 @@ marginB-2 {
   justify-content: center;
 }
 
-/* --- VORDERSEITE --- */
 .front-card-about {
   background-color: #f5f5f5;
   width: 100%;
-  height: 350px; /* Tipp: Setz das am besten auch auf 100%, damit Vorder- und Rückseite gleich gross sind! */
+  height: 350px;
   pointer-events: auto;
 }
 
-/* Wenn gedreht: Vorderseite reagiert auf keine Klicks mehr */
 .card-body-about.flipped .front-card-about {
   pointer-events: none;
 }
 
-/* --- RÜCKSEITE --- */
 .back-card-about {
   background-color: #ffffff;
   width: 100%;
   height: 100%;
   color: #171717;
   transform: rotateY(180deg);
-  /* WICHTIG: Blockiert Klicks auf die Videos, solange die Karte nicht gedreht ist */
   pointer-events: none;
 }
 
-/* Wenn gedreht: Rückseite und Videos werden klickbar */
 .card-body-about.flipped .back-card-about {
   pointer-events: auto;
 }
@@ -259,18 +161,8 @@ marginB-2 {
   transform: rotateY(180deg);
 }
 
-.text-competences {
-  font-size: 1.7rem;
-  font-weight: semi-bold;
-}
-
 .klicken-icon {
   width: 30px;
-  height: auto;
-}
-
-.klicken-icon {
-  width: 25px;
   height: auto;
 }
 
@@ -285,11 +177,6 @@ marginB-2 {
   border-radius: 2px;
   align-self: stretch;
   flex-shrink: 0;
-}
-
-.title-projects {
-  font-size: 1.2rem;
-  font-weight: bold;
 }
 
 .card-body-project {
@@ -353,11 +240,6 @@ marginB-2 {
   width: 100%;
   padding: 10px;
   border: 4px solid rgb(135, 135, 135);
-}
-
-.title-contact {
-  font-size: 1rem;
-  font-weight: bold;
 }
 
 .text-field {

@@ -11,13 +11,13 @@ export default function AboutSection() {
     }
   };
   return (
-    <section id="about" className="marginT-4">
+    <section id="about" className="mt-10">
       <div>
-        <h2 className="text-center title">Über mich</h2>
+        <h2 className="text-center text-4xl font-bold">Über mich</h2>
       </div>
-      <div className="paddingL-3 paddingR-3">
-        <div className="card-body marginT-4">
-          <p className="padding-1 text-center">
+      <div className="pl-7 pr-7">
+        <div className="card-body mt-10">
+          <p className="p-2 text-center">
             Hey! Ich bin <strong>Luka Jevremovic</strong>, geboren im Jahr 2010,
             und habe eine grosse Leidenschaft für Computer, Technik,
             Naturwissenschaften, Programmieren und Mathematik, weshalb ich meine
@@ -35,7 +35,7 @@ export default function AboutSection() {
             absolvieren.
           </p>
         </div>
-        <div className="marginT-6 center">
+        <div className="mt-15 flex justify-center items-center">
           <img
             src="/klein-profilbild.jpg"
             alt="Portrait"
@@ -43,10 +43,10 @@ export default function AboutSection() {
           />
         </div>
         <div
-          className={`card-body-about marginT-6 ${activeCard === "hobby" ? "flipped" : ""}`}
+          className={`card-body-about mt-15 ${activeCard === "hobby" ? "flipped" : ""}`}
         >
           <div className="front-card-about">
-            <p className="padding-1 text-center">
+            <p className="p-2 text-center">
               In meiner <strong>Freizeit</strong> verbringe ich viel Zeit{" "}
               <strong>draussen mit Freunden</strong> und bin gerne aktiv.
               Besonders mag ich das{" "}
@@ -57,14 +57,17 @@ export default function AboutSection() {
               <strong>gerne Basketball.</strong>
             </p>
             <div
-              className="btn marginT-1 center text-center"
+              className="btn mt-2 flex justify-center items-center text-center"
               onClick={() => handleFlip("hobby")}
             >
               <p>Mehr anzeigen</p>
             </div>
           </div>
           <div className="back-card-about">
-            <h2 className="padding-1 text-center font-semibold text-xl">
+            <h2
+              className="p-2 text-center 
+font-medium text-xl"
+            >
               videos
             </h2>
             <div className="flex-col gap-3">
@@ -90,7 +93,7 @@ export default function AboutSection() {
               </div>
             </div>
             <div
-              className="btn-2 marginT-1 center text-center"
+              className="btn-2 mt-2 flex justify-center items-center text-center"
               onClick={() => handleFlip("hobby")}
             >
               <p>zurück</p>

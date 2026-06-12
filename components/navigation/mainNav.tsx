@@ -3,15 +3,13 @@
 import { useState } from "react";
 
 const MainNav: React.FC = () => {
-  // State für das mobile Burger-Menü
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <nav
-      className="navbar-container flex flex-wrap items-center justify-between px-6 relative"
+      className="navbar-container flex flex-wrap justify-between px-6 relative"
       id="Navigation"
     >
-      {/* 🇩🇪🇬🇧 Sprachauswahl / Flaggen */}
       <div className="flex items-center gap-4">
         <a href="/">
           <img
@@ -29,7 +27,6 @@ const MainNav: React.FC = () => {
         </a>
       </div>
 
-      {/* 🍔 Burger Button (sichtbar auf mobilen Geräten) */}
       <button
         className="md:hidden flex flex-col justify-center items-center gap-1.5 w-8 h-8 cursor-pointer z-50"
         type="button"
@@ -48,7 +45,6 @@ const MainNav: React.FC = () => {
         ></span>
       </button>
 
-      {/* 🔗 Navigationslinks (Flexbox auf Desktop, Dropdown auf Mobile) */}
       <div
         className={`w-full md:w-auto md:flex items-center mt-4 md:mt-0 ${isOpen ? "block" : "hidden md:block"}`}
       >
