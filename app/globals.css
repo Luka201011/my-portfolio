@@ -13,13 +13,6 @@ body {
   scroll-behavior: smooth;
 }
 
-/* Navigation Bar Styles */
-.navbar-container {
-  background-color: rgb(135, 135, 135);
-  padding: 20px;
-  height: 72px;
-}
-
 .flag-icon {
   width: 40px;
   height: auto;
