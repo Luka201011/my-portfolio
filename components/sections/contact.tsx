@@ -6,7 +6,7 @@ export default function ContactSection() {
           Kontakt
         </h2>
       </div>
-      <div className="px-4 flex flex-col gap-10 md:grid md:grid-cols-2 xl:grid xl:grid-cols-2 xl:gap-16 xl:items-stretch xl:ml-60 xl:mr-60">
+      <div className="px-4 flex flex-col gap-10 md:grid md:grid-cols-2 xl:grid xl:grid-cols-2 xl:gap-16 xl:items-stretch xl:ml-45 xl:mr-45">
         <div className="card-body-contact w-full text-center flex flex-col justify-between items-center p-6 md:col-span-2 xl:col-span-1">
           <div>
             <h2 className="font-bold text-base mb-4 text-lg">
