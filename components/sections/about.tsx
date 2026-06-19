@@ -69,7 +69,7 @@ export default function AboutSection() {
           </div>
           <div className="back-card-about xl:h-auto p-5 xl:p-3">
             <h2 className="p-2 text-center font-medium text-xl">videos</h2>
-            <div className=" flex flex-col xl:flex-row gap-5 md:gap-10 xl:gap-5 md:flex-row">
+            <div className=" flex flex-col gap-5 2xl:gap-12 xl:flex-row xl:gap-5 md:gap-10 md:flex-row">
               <div>
                 <iframe
                   width="250"
