@@ -41,7 +41,7 @@ export default function ProjectsSection() {
         </div>
 
         <div
-          className={`card-body-project text-center mt-10 p-10 h-[450px] xl:h-[320px] ${activeCard === "minion" ? "flipped" : ""}`}
+          className={`card-body-project text-center mt-10 p-10 h-[450px] xl:h-[320px] md:h-[320] ${activeCard === "minion" ? "flipped" : ""}`}
         >
           <div className="front-card-project flex-col">
             <div>
@@ -118,7 +118,7 @@ export default function ProjectsSection() {
         </div>
 
         <div
-          className={`card-body-project text-center mt-10 p-10 h-[450px] xl:h-[320px] ${activeCard === "apps" ? "flipped" : ""}`}
+          className={`card-body-project text-center mt-10 p-10 h-[450px] xl:h-[320px] md:h-[320] ${activeCard === "apps" ? "flipped" : ""}`}
         >
           <div className="front-card-project">
             <div>

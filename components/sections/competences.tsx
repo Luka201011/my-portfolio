@@ -18,8 +18,7 @@ export default function CompetencesSection() {
         <h2 className="text-center text-4xl font-bold">Kompetenzen</h2>
       </div>
 
-      {/* Grid-Layout: Auf Mobile untereinander mit Abstand (space-y oder mt), ab xl: sauberes 3-Spalten-Grid via gap */}
-      <div className="flex flex-col xl:grid xl:grid-cols-3 gap-8 justify-center items-center mt-20 px-7">
+      <div className="flex flex-col xl:grid xl:grid-cols-3 md:grid md:grid-cols-2 gap-8 justify-center items-center mt-20 px-7">
         {/* HTML Karte */}
         <div
           className={`card-body-competences w-full ${activeCard === "html" ? "flipped" : ""}`}
@@ -40,7 +39,7 @@ export default function CompetencesSection() {
 
         {/* CSS Karte */}
         <div
-          className={`card-body-competences w-full mt-8 xl:mt-0 ${activeCard === "css" ? "flipped" : ""}`}
+          className={`card-body-competences w-full mt-8 xl:mt-0 md:mt-0 ${activeCard === "css" ? "flipped" : ""}`}
           onClick={() => handleFlip("css")}
         >
           <div className="front-card-competences">
@@ -104,7 +103,7 @@ export default function CompetencesSection() {
         </div>
 
         {/* Mehr anzeigen Button */}
-        <div className="btn justify-self-center mt-8 xl:col-start-2 xl:col-span-1">
+        <div className="btn justify-self-center mt-8 xl:col-start-2 xl:col-span-1 md:col-span-2">
           <p>Mehr anzeigen</p>
         </div>
       </div>

@@ -6,15 +6,14 @@ export default function ContactSection() {
           Kontakt
         </h2>
       </div>
-
-      <div className="px-4 flex flex-col gap-10 xl:grid xl:grid-cols-2 xl:gap-16 xl:items-stretch xl:ml-60 xl:mr-60">
-        <div className="card-body-contact w-full text-center flex flex-col justify-between items-center p-6">
+      <div className="px-4 flex flex-col gap-10 md:grid md:grid-cols-2 xl:grid xl:grid-cols-2 xl:gap-16 xl:items-stretch xl:ml-60 xl:mr-60">
+        <div className="card-body-contact w-full text-center flex flex-col justify-between items-center p-6 md:col-span-2 xl:col-span-1">
           <div>
             <h2 className="font-bold text-base mb-4 text-lg">
               Aktueller Arbeitsort
             </h2>
           </div>
-          <div className="w-full h-[300px] xl:h-full xl:flex-grow">
+          <div className="w-full h-[300px] md:h-[400px] xl:h-full xl:flex-grow">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2724.345366273858!2d7.470208374222856!3d46.975601671081066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478e3a00d329ec5b%3A0x523f3d7992284a57!2sBusiness%20Park%2C%20Ittigen%20Business%20Park%2C%20Ey%2010%2C%203063%20Ittigen!5e1!3m2!1sde!2sch!4v1780560104359!5m2!1sde!2sch"
               width="100%"
@@ -26,8 +25,8 @@ export default function ContactSection() {
             ></iframe>
           </div>
         </div>
-        <div className="flex flex-col gap-10 w-full xl:justify-between">
-          <div className="card-body-contact w-full flex flex-col justify-center items-center p-6">
+        <div className="flex flex-col gap-10 w-full md:grid md:grid-cols-2 md:col-span-2 xl:flex xl:flex-col xl:col-span-1 xl:justify-between">
+          <div className="card-body-contact w-full flex flex-col justify-center items-center p-6 md:col-span-1">
             <div>
               <h2 className="font-bold text-base text-center mb-4 text-lg">
                 Kontaktdaten
@@ -41,14 +40,6 @@ export default function ContactSection() {
                   className="contact-icon w-6 h-6 object-contain"
                 />
                 <p>Luka Jevremovic</p>
-              </div>
-              <div className="flex items-center gap-4 mt-3 w-full">
-                <img
-                  src="/anruf.png"
-                  alt="Telefon Icon"
-                  className="contact-icon w-6 h-6 object-contain"
-                />
-                <p>079 412 94 62</p>
               </div>
               <div className="flex items-center gap-4 mt-3 w-full">
                 <img
@@ -93,7 +84,7 @@ export default function ContactSection() {
               </div>
             </div>
           </div>
-          <div className="card-body-contact w-full flex flex-col justify-center items-center p-6">
+          <div className="card-body-contact w-full flex flex-col justify-center items-center p-6 md:col-span-1">
             <div>
               <h2 className="font-bold text-base text-center mb-4 text-lg">
                 Rand Informationen
@@ -112,6 +103,11 @@ export default function ContactSection() {
               </div>
               <div className="mt-3 w-full">
                 <p>
+                  <strong>Aktuelles Projekt:</strong> Apps Team
+                </p>
+              </div>
+              <div className="mt-3 w-full">
+                <p>
                   <strong>Schultage:</strong> Montag, Dienstag
                 </p>
               </div>
@@ -119,7 +115,6 @@ export default function ContactSection() {
           </div>
         </div>
       </div>
-
       {/* Footer */}
       <footer className="footer mt-16 flex items-center justify-center">
         <div className="btn">
@@ -131,7 +126,6 @@ export default function ContactSection() {
             Lebenslauf Herunterladen
           </a>
         </div>
-
         <div className="pfeil-rechts">
           <a href="#Navigation">
             <img src="/pfeil-nach-oben.png" alt="Nach Oben" />

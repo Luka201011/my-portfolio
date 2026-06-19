@@ -16,7 +16,7 @@ export default function AboutSection() {
         <h2 className="text-center text-4xl font-bold">Über mich</h2>
       </div>
       <div className="pl-7 pr-7 xl:grid xl:grid-cols-8">
-        <div className="card-body mt-10 xl:col-span-3 xl:col-start-2 xl:row-start-1">
+        <div className="card-body mt-10 xl:col-span-3 xl:col-start-2 xl:row-start-1 md:mt-15">
           <p className="p-2 text-center">
             Hey! Ich bin <strong>Luka Jevremovic</strong>, geboren im Jahr 2010,
             und habe eine grosse Leidenschaft für Computer, Technik,
@@ -47,7 +47,7 @@ export default function AboutSection() {
         */}
 
         <div
-          className={`card-body-about mt-15 min-h-[450px] xl:min-h-[290px] xl:col-span-3 xl:col-end-8 xl:row-start-3 ${activeCard === "hobby" ? "flipped" : ""}`}
+          className={`card-body-about mt-15 min-h-[450px] xl:min-h-[290px] xl:col-span-3 xl:col-end-8 xl:row-start-3 md:min-h-[290px] ${activeCard === "hobby" ? "flipped" : ""}`}
         >
           <div className="front-card-about p-5">
             <p className="p-2 text-center">
@@ -69,7 +69,7 @@ export default function AboutSection() {
           </div>
           <div className="back-card-about xl:h-auto p-5 xl:p-3">
             <h2 className="p-2 text-center font-medium text-xl">videos</h2>
-            <div className=" flex flex-col xl:flex-row gap-3">
+            <div className=" flex flex-col xl:flex-row gap-10 md:flex-row">
               <div>
                 <iframe
                   width="250"
@@ -92,7 +92,7 @@ export default function AboutSection() {
               </div>
             </div>
             <div
-              className="btn-2 mt-2 flex justify-center items-center text-center"
+              className="btn-2 mt-6 flex justify-center items-center text-center"
               onClick={() => handleFlip("hobby")}
             >
               <p>zurück</p>

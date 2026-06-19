@@ -7,9 +7,9 @@ export default function Home() {
   return (
     <>
       <div id="home">
-        <div className="flex flex-col xl:flex-row justify-center items-center xl:gap-20 xl:mt-25">
+        <div className="flex flex-col xl:flex-row justify-center items-center xl:gap-20 xl:mt-25 md:flex-row md:gap-15">
           <div className="flex-col justify-center flex items-center">
-            <h1 className="text-2xl font-bold mt-15 xl:text-5xl">
+            <h1 className="text-2xl font-bold mt-15 xl:text-5xl ">
               Luka Jevremovic
             </h1>
             <h2 className="text-xl font-normal xl:text-4xl">Informatiker</h2>
@@ -28,7 +28,7 @@ export default function Home() {
             <h1 className="font-bold text-2xl xl:text-5xl">1. Lehrjahr</h1>
           </div>
         </div>
-        <div className="mx-auto  text-center p-8 mt-8 xl:mt-15 xl:w-100 xl:text-xl">
+        <div className="mx-auto  text-center p-8 mt-8 xl:mt-15 xl:w-100 xl:text-xl md:w-80">
           <p>
             Ich bin im ersten Lehrjahr als Applikationsentwickler bei Swisscom
             tätig. Es freut mich, dass du auf meine Website bist und wünsche dir
