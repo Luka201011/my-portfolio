@@ -16,11 +16,11 @@ export default function ProjectsSection() {
         <h2 className="text-center text-4xl font-bold">Projekte</h2>
       </div>
       <div className="flex justify-center items-center mt-10 pl-7 pr-7 flex-col xl:grid xl:grid-cols-2 gap-8">
-        <div className="card-body text-center p-10">
+        <div className="card-body bg-card-bg-white text-center p-10">
           <div>
             <h2 className="text-lg font-bold">First Steps 2025 NEX-14</h2>
           </div>
-          <div className="title-projects-line"></div>
+          <div className="title-projects-line bg-second"></div>
           <div>
             <p>
               <strong>Host:</strong> Jonas Schweizer
@@ -43,11 +43,11 @@ export default function ProjectsSection() {
         <div
           className={`card-body-project text-center mt-10 p-10 h-[450px] xl:h-[320px] md:h-[320] ${activeCard === "minion" ? "flipped" : ""}`}
         >
-          <div className="front-card-project flex-col">
+          <div className="front-card-project bg-card-bg-white flex-col">
             <div>
               <h2 className="text-lg font-bold">IT-Onboarding Team Minion</h2>
             </div>
-            <div className="title-projects-line"></div>
+            <div className="title-projects-line bg-second"></div>
             <div>
               <p>
                 <strong>Host:</strong> Margherita Fasanella
@@ -65,7 +65,7 @@ export default function ProjectsSection() {
                 vorbereitet zu sein.
               </p>
               <div
-                className="btn justify-self-center mt-8"
+                className="btn bg-second hover:bg-btn-hover text-white justify-self-center mt-8"
                 onClick={() => handleFlip("minion")}
               >
                 <p>Mehr Infos</p>
@@ -109,7 +109,7 @@ export default function ProjectsSection() {
               </div>
             </div>
             <div
-              className="btn-2 mt-2 justify-self-center text-center"
+              className="btn-2 bg-btn-back text-white mt-2 justify-self-center text-center"
               onClick={() => handleFlip("minion")}
             >
               <p>zurück</p>
@@ -120,11 +120,11 @@ export default function ProjectsSection() {
         <div
           className={`card-body-project text-center mt-10 p-10 h-[450px] xl:h-[320px] md:h-[320] ${activeCard === "apps" ? "flipped" : ""}`}
         >
-          <div className="front-card-project">
+          <div className="front-card-project bg-card-bg-white">
             <div>
               <h2 className="text-lg font-bold">Appes Team (Frontend)</h2>
             </div>
-            <div className="title-projects-line"></div>
+            <div className="title-projects-line bg-second"></div>
             <div>
               <p>
                 <strong>Host:</strong> Petre Tudor
@@ -142,7 +142,7 @@ export default function ProjectsSection() {
                 Sponsoring-Aktivitäten bei Swisscom.
               </p>
               <div
-                className="btn justify-self-center mt-8"
+                className="btn bg-second text-white justify-self-center mt-8"
                 onClick={() => handleFlip("apps")}
               >
                 <p>Mehr Infos</p>
@@ -164,7 +164,7 @@ export default function ProjectsSection() {
               </div>
             </div>
             <div
-              className="btn-2 mt-2 flex justify-center items-center text-center"
+              className="btn-2 bg-btn-back text-white mt-2 flex justify-center items-center text-center"
               onClick={() => handleFlip("apps")}
             >
               <p>zurück</p>

@@ -7,7 +7,7 @@ export default function ContactSection() {
         </h2>
       </div>
       <div className="px-4 flex flex-col gap-10 md:grid md:grid-cols-2 xl:grid xl:grid-cols-2 xl:gap-16 xl:items-stretch xl:ml-45 xl:mr-45">
-        <div className="card-body-contact w-full text-center flex flex-col justify-between items-center p-6 md:col-span-2 xl:col-span-1">
+        <div className="card-body-contact bg-bg-akcent border-solid border-4 border-card-border w-full text-center flex flex-col justify-between items-center p-6 md:col-span-2 xl:col-span-1">
           <div>
             <h2 className="font-bold text-base mb-4 text-lg">
               Aktueller Arbeitsort
@@ -26,13 +26,13 @@ export default function ContactSection() {
           </div>
         </div>
         <div className="flex flex-col gap-10 w-full md:grid md:grid-cols-2 md:col-span-2 xl:flex xl:flex-col xl:col-span-1 xl:justify-between">
-          <div className="card-body-contact w-full flex flex-col justify-center items-center p-6 md:col-span-1">
+          <div className="card-body-contact bg-bg-akcent border-solid border-4 border-card-border w-full flex flex-col justify-center items-center p-6 md:col-span-1">
             <div>
               <h2 className="font-bold text-base text-center mb-4 text-lg">
                 Kontaktdaten
               </h2>
             </div>
-            <div className="text-field w-full flex justify-start items-start flex-col p-4">
+            <div className="text-field bg-card-bg-white border-2 border-solid border-black w-full flex justify-start items-start flex-col p-4">
               <div className="flex items-center gap-4 w-full">
                 <img
                   src="/ausweis.png"
@@ -84,13 +84,13 @@ export default function ContactSection() {
               </div>
             </div>
           </div>
-          <div className="card-body-contact w-full flex flex-col justify-center items-center p-6 md:col-span-1">
+          <div className="card-body-contact bg-bg-akcent border-solid border-4 border-card-border w-full flex flex-col justify-center items-center p-6 md:col-span-1">
             <div>
               <h2 className="font-bold text-base text-center mb-4 text-lg">
                 Rand Informationen
               </h2>
             </div>
-            <div className="text-field w-full flex justify-start items-start flex-col p-4">
+            <div className="text-field bg-card-bg-white border-2 border-solid border-black w-full flex justify-start items-start flex-col p-4">
               <div className="w-full">
                 <p>
                   <strong>LB:</strong> Martin Näf
@@ -116,8 +116,8 @@ export default function ContactSection() {
         </div>
       </div>
       {/* Footer */}
-      <footer className="footer mt-16 flex items-center justify-center">
-        <div className="btn">
+      <footer className="footer bg-second mt-16 flex items-center justify-center">
+        <div className="btn bg-second text-white hover:bg-btn-hover">
           <a
             href="./Lebenslauf_Luka_Jevremovic.pdf"
             target="_blank"

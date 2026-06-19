@@ -24,7 +24,7 @@ export default function CompetencesSection() {
           className={`card-body-competences w-full ${activeCard === "html" ? "flipped" : ""}`}
           onClick={() => handleFlip("html")}
         >
-          <div className="front-card-competences">
+          <div className="front-card-competences bg-card-bg-white">
             <p className="text-2xl font-semibold">HTML</p>
             <img
               src="/klicken.png"
@@ -32,7 +32,7 @@ export default function CompetencesSection() {
               className="klicken-icon"
             />
           </div>
-          <div className="back-card-competences">
+          <div className="back-card-competences bg-second text-white">
             <p className="text-2xl font-semibold">Fortgeschritten</p>
           </div>
         </div>
@@ -42,10 +42,10 @@ export default function CompetencesSection() {
           className={`card-body-competences w-full mt-8 xl:mt-0 md:mt-0 ${activeCard === "css" ? "flipped" : ""}`}
           onClick={() => handleFlip("css")}
         >
-          <div className="front-card-competences">
+          <div className="front-card-competences bg-card-bg-white">
             <p className="text-2xl font-semibold">CSS</p>
           </div>
-          <div className="back-card-competences">
+          <div className="back-card-competences bg-second text-white">
             <p className="text-2xl font-semibold">Fortgeschritten</p>
           </div>
         </div>
@@ -55,10 +55,10 @@ export default function CompetencesSection() {
           className={`card-body-competences w-full mt-8 xl:mt-0 ${activeCard === "javascript" ? "flipped" : ""}`}
           onClick={() => handleFlip("javascript")}
         >
-          <div className="front-card-competences">
+          <div className="front-card-competences bg-card-bg-white">
             <p className="text-2xl font-semibold">JavaScript</p>
           </div>
-          <div className="back-card-competences">
+          <div className="back-card-competences bg-second text-white">
             <p className="text-2xl font-semibold">Grundkenntnisse</p>
           </div>
         </div>
@@ -68,10 +68,10 @@ export default function CompetencesSection() {
           className={`card-body-competences w-full mt-8 xl:mt-0 ${activeCard === "angular" ? "flipped" : ""}`}
           onClick={() => handleFlip("angular")}
         >
-          <div className="front-card-competences">
+          <div className="front-card-competences bg-card-bg-white">
             <p className="text-2xl font-semibold">Angular</p>
           </div>
-          <div className="back-card-competences">
+          <div className="back-card-competences bg-second text-white">
             <p className="text-2xl font-semibold">Grundkenntnisse</p>
           </div>
         </div>
@@ -81,10 +81,10 @@ export default function CompetencesSection() {
           className={`card-body-competences w-full mt-8 xl:mt-0 ${activeCard === "typescript" ? "flipped" : ""}`}
           onClick={() => handleFlip("typescript")}
         >
-          <div className="front-card-competences">
+          <div className="front-card-competences bg-card-bg-white">
             <p className="text-2xl font-semibold">TypeScript</p>
           </div>
-          <div className="back-card-competences">
+          <div className="back-card-competences bg-second text-white">
             <p className="text-2xl font-semibold">Grundkenntnisse</p>
           </div>
         </div>
@@ -94,16 +94,16 @@ export default function CompetencesSection() {
           className={`card-body-competences w-full mt-8 xl:mt-0 ${activeCard === "sdx" ? "flipped" : ""}`}
           onClick={() => handleFlip("sdx")}
         >
-          <div className="front-card-competences">
+          <div className="front-card-competences bg-card-bg-white">
             <p className="text-2xl font-semibold">SDX</p>
           </div>
-          <div className="back-card-competences">
+          <div className="back-card-competences bg-second text-white">
             <p className="text-2xl font-semibold">Grundkenntnisse</p>
           </div>
         </div>
 
         {/* Mehr anzeigen Button */}
-        <div className="btn justify-self-center mt-8 xl:col-start-2 xl:col-span-1 md:col-span-2">
+        <div className="btn bg-second text-white hover:bg-btn-hover justify-self-center mt-8 xl:col-start-2 xl:col-span-1 md:col-span-2">
           <p>Mehr anzeigen</p>
         </div>
       </div>
