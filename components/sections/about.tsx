@@ -11,12 +11,12 @@ export default function AboutSection() {
     }
   };
   return (
-    <section id="about" className="mt-10">
+    <section id="about" className="mt-10 lg:mt-45">
       <div>
         <h2 className="text-center text-4xl font-bold">Über mich</h2>
       </div>
-      <div className="pl-7 pr-7">
-        <div className="card-body mt-10">
+      <div className="pl-7 pr-7 xl:grid xl:grid-cols-8">
+        <div className="card-body mt-10 xl:col-span-3 xl:col-start-2 xl:row-start-1">
           <p className="p-2 text-center">
             Hey! Ich bin <strong>Luka Jevremovic</strong>, geboren im Jahr 2010,
             und habe eine grosse Leidenschaft für Computer, Technik,
@@ -35,17 +35,21 @@ export default function AboutSection() {
             absolvieren.
           </p>
         </div>
-        <div className="mt-15 flex justify-center items-center">
+
+        {/*
+        <div className="mt-15 flex justify-center items-center xl:col-start-4 xl:col-span-2 xl:row-start-2">
           <img
             src="/klein-profilbild.jpg"
             alt="Portrait"
             className="aboutimg"
           />
         </div>
+        */}
+
         <div
-          className={`card-body-about mt-15 ${activeCard === "hobby" ? "flipped" : ""}`}
+          className={`card-body-about mt-15 min-h-[450px] xl:min-h-[290px] xl:col-span-3 xl:col-end-8 xl:row-start-3 ${activeCard === "hobby" ? "flipped" : ""}`}
         >
-          <div className="front-card-about">
+          <div className="front-card-about p-5">
             <p className="p-2 text-center">
               In meiner <strong>Freizeit</strong> verbringe ich viel Zeit{" "}
               <strong>draussen mit Freunden</strong> und bin gerne aktiv.
@@ -63,14 +67,9 @@ export default function AboutSection() {
               <p>Mehr anzeigen</p>
             </div>
           </div>
-          <div className="back-card-about">
-            <h2
-              className="p-2 text-center 
-font-medium text-xl"
-            >
-              videos
-            </h2>
-            <div className="flex-col gap-3">
+          <div className="back-card-about xl:h-auto p-5 xl:p-3">
+            <h2 className="p-2 text-center font-medium text-xl">videos</h2>
+            <div className=" flex flex-col xl:flex-row gap-3">
               <div>
                 <iframe
                   width="250"

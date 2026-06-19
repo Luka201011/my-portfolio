@@ -11,11 +11,11 @@ export default function ProjectsSection() {
     }
   };
   return (
-    <section id="projects" className="mt-10">
+    <section id="projects" className="mt-30">
       <div>
         <h2 className="text-center text-4xl font-bold">Projekte</h2>
       </div>
-      <div className="flex justify-center items-center mt-10 pl-7 pr-7 flex-col">
+      <div className="flex justify-center items-center mt-10 pl-7 pr-7 flex-col xl:grid xl:grid-cols-2 gap-8">
         <div className="card-body text-center p-10">
           <div>
             <h2 className="text-lg font-bold">First Steps 2025 NEX-14</h2>
@@ -41,7 +41,7 @@ export default function ProjectsSection() {
         </div>
 
         <div
-          className={`card-body-project text-center mt-10 p-10 ${activeCard === "minion" ? "flipped" : ""}`}
+          className={`card-body-project text-center mt-10 p-10 h-[450px] xl:h-[320px] ${activeCard === "minion" ? "flipped" : ""}`}
         >
           <div className="front-card-project flex-col">
             <div>
@@ -118,7 +118,7 @@ export default function ProjectsSection() {
         </div>
 
         <div
-          className={`card-body-project text-center mt-10 p-10 ${activeCard === "apps" ? "flipped" : ""}`}
+          className={`card-body-project text-center mt-10 p-10 h-[450px] xl:h-[320px] ${activeCard === "apps" ? "flipped" : ""}`}
         >
           <div className="front-card-project">
             <div>

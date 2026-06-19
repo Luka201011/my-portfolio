@@ -1,79 +1,74 @@
 export default function ContactSection() {
   return (
-    <section id="contact" className="mt-10">
+    <section id="contact" className="mt-30 w-full">
       <div>
-        <h2 className="text-center text-4xl font-bold">Kontakt</h2>
+        <h2 className="text-center text-4xl font-bold mb-10 xl:mb-20">
+          Kontakt
+        </h2>
       </div>
-      <div className="flex justify-center items-center mt-10 pl-7 pr-7 flex-col">
-        <div className="card-body-contact text-center flex justify-center items-center flex-col">
+
+      <div className="px-4 flex flex-col gap-10 xl:grid xl:grid-cols-2 xl:gap-16 xl:items-stretch xl:ml-60 xl:mr-60">
+        <div className="card-body-contact w-full text-center flex flex-col justify-between items-center p-6">
           <div>
-            <h2 className="font-bold text-base">Aktueller Arbeitsort</h2>
+            <h2 className="font-bold text-base mb-4 text-lg">
+              Aktueller Arbeitsort
+            </h2>
           </div>
-          <div
-            className="flex justify-center items-center mt-5"
-            style={{ width: "100%" }}
-          >
+          <div className="w-full h-[300px] xl:h-full xl:flex-grow">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2724.345366273858!2d7.470208374222856!3d46.975601671081066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478e3a00d329ec5b%3A0x523f3d7992284a57!2sBusiness%20Park%2C%20Ittigen%20Business%20Park%2C%20Ey%2010%2C%203063%20Ittigen!5e1!3m2!1sde!2sch!4v1780560104359!5m2!1sde!2sch"
               width="100%"
-              height="200px"
+              height="100%"
+              className="rounded-xl w-full h-full"
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
         </div>
-        <div className="card-body-contact flex justify-center items-center flex-col mt-10">
-          <div>
-            <h2 className="font-bold text-base text-center">Kontaktdaten</h2>
-          </div>
-          <div className="text-field flex justify-start items-start mt-5 flex-col">
-            <div className="flex-row flex gap-4">
-              <div>
+        <div className="flex flex-col gap-10 w-full xl:justify-between">
+          <div className="card-body-contact w-full flex flex-col justify-center items-center p-6">
+            <div>
+              <h2 className="font-bold text-base text-center mb-4 text-lg">
+                Kontaktdaten
+              </h2>
+            </div>
+            <div className="text-field w-full flex justify-start items-start flex-col p-4">
+              <div className="flex items-center gap-4 w-full">
                 <img
                   src="/ausweis.png"
                   alt="Person Icon"
-                  className="contact-icon"
+                  className="contact-icon w-6 h-6 object-contain"
                 />
-              </div>
-              <div>
                 <p>Luka Jevremovic</p>
               </div>
-            </div>
-            <div className="flex-row flex gap-4 mt-2">
-              <div>
+              <div className="flex items-center gap-4 mt-3 w-full">
                 <img
                   src="/anruf.png"
                   alt="Telefon Icon"
-                  className="contact-icon"
+                  className="contact-icon w-6 h-6 object-contain"
                 />
-              </div>
-              <div>
                 <p>079 412 94 62</p>
               </div>
-            </div>
-            <div className="flex-row flex gap-4 mt-2">
-              <div>
-                <img src="/mail.png" alt="Mail Icon" className="contact-icon" />
-              </div>
-              <div>
+              <div className="flex items-center gap-4 mt-3 w-full">
+                <img
+                  src="/mail.png"
+                  alt="Mail Icon"
+                  className="contact-icon w-6 h-6 object-contain"
+                />
                 <a
                   href="mailto:luka.jevremovic@swisscom.com"
-                  className="underline"
+                  className="underline break-all"
                 >
                   luka.jevremovic@swisscom.com
                 </a>
               </div>
-            </div>
-            <div className="flex-row flex gap-4 mt-2">
-              <div>
+              <div className="flex items-center gap-4 mt-3 w-full">
                 <img
                   src="/biografie.png"
-                  alt="Computer Icon Intranet Swisscom"
-                  className="contact-icon"
+                  alt="Computer Icon Intranet"
+                  className="contact-icon w-6 h-6 object-contain"
                 />
-              </div>
-              <div>
                 <a
                   className="underline"
                   href="https://neli.swisscom.com/profile/%5Bme%5D/detail"
@@ -82,16 +77,12 @@ export default function ContactSection() {
                   Intranet
                 </a>
               </div>
-            </div>
-            <div className="flex-row flex gap-4 mt-2">
-              <div>
+              <div className="flex items-center gap-4 mt-3 w-full">
                 <img
                   src="/linkedin.png"
                   alt="LinkedIn Icon"
-                  className="contact-icon"
+                  className="contact-icon w-6 h-6 object-contain"
                 />
-              </div>
-              <div>
                 <a
                   className="underline"
                   href="https://www.linkedin.com/in/luka-jevremovic-3994a5379/"
@@ -102,34 +93,36 @@ export default function ContactSection() {
               </div>
             </div>
           </div>
-        </div>
-        <div className="card-body-contact flex justify-center items-center flex-col mt-10">
-          <div>
-            <h2 className="font-bold text-base text-center">
-              Rand Informationen
-            </h2>
-          </div>
-          <div className="text-field flex justify-start items-start mt-5 flex-col">
-            <div className="flex-row gap-4">
-              <div>
-                <p>LB: Martin Näf</p>
-              </div>
+          <div className="card-body-contact w-full flex flex-col justify-center items-center p-6">
+            <div>
+              <h2 className="font-bold text-base text-center mb-4 text-lg">
+                Rand Informationen
+              </h2>
             </div>
-            <div className="flex-row gap-4 mt-2">
-              <div>
-                <p>Host: Petre Tudor</p>
+            <div className="text-field w-full flex justify-start items-start flex-col p-4">
+              <div className="w-full">
+                <p>
+                  <strong>LB:</strong> Martin Näf
+                </p>
               </div>
-            </div>
-            <div className="flex-row gap-4 mt-2">
-              <div>
-                <p>Schultage: Montag, Dienstag</p>
+              <div className="mt-3 w-full">
+                <p>
+                  <strong>Host:</strong> Petre Tudor
+                </p>
+              </div>
+              <div className="mt-3 w-full">
+                <p>
+                  <strong>Schultage:</strong> Montag, Dienstag
+                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <footer className="footer mt-10">
-        <div className="text-center btn">
+
+      {/* Footer */}
+      <footer className="footer mt-16 flex items-center justify-center">
+        <div className="btn">
           <a
             href="./Lebenslauf_Luka_Jevremovic.pdf"
             target="_blank"
