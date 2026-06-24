@@ -116,7 +116,7 @@ export default function ContactSection() {
         </div>
       </div>
       {/* Footer */}
-      <footer className="footer bg-second mt-16 flex items-center justify-center">
+      <footer className="footer bg-bg-akcent mt-16 flex items-center justify-center">
         <div className="btn bg-second text-white hover:bg-btn-hover">
           <a
             href="./Lebenslauf_Luka_Jevremovic.pdf"
@@ -128,7 +128,7 @@ export default function ContactSection() {
         </div>
         <div className="pfeil-rechts">
           <a href="#Navigation">
-            <img src="/pfeil-nach-oben.png" alt="Nach Oben" />
+            <img src="/pfeil-oben.png" alt="Nach Oben" />
           </a>
         </div>
       </footer>

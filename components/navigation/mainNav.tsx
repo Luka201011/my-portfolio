@@ -3,19 +3,37 @@
 import { useState } from "react";
 import { usePathname } from "next/navigation";
 
+const themes = ["theme-default", "theme-old", "theme-green"];
+
 const MainNav: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
   const isEN = pathname.startsWith("/en");
+  const [themeIndex, setThemeIndex] = useState(0);
+
+  const handleThemeChange = () => {
+    const next = (themeIndex + 1) % themes.length;
+    setThemeIndex(next);
+    document.documentElement.classList.remove(...themes);
+    if (next != 0) {
+      document.documentElement.classList.add(themes[next]);
+    }
+  };
 
   return (
-    <nav
-      id="Navigation"
-      style={{ backgroundColor: "rgb(135, 135, 135)" }}
-      className="w-full"
-    >
+    <nav id="Navigation" className="w-full bg-card-border">
       <div className="flex items-center justify-between px-6 py-3">
         <div className="flex items-center gap-3">
+          <button
+            onClick={handleThemeChange}
+            title={`Theme: ${themes[themeIndex]}`}
+          >
+            <img
+              src="/farbpalette.png"
+              alt="farbpalette"
+              className="flag-icon"
+            />
+          </button>
           <a href="/" title="Deutsch" style={{ opacity: isEN ? 0.4 : 1 }}>
             <img src="/flagge.png" alt="Deutsch" className="flag-icon" />
           </a>
