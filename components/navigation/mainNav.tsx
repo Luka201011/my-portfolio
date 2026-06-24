@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { usePathname } from "next/navigation";
 
-const themes = ["theme-default", "theme-old", "theme-green"];
+const themes = ["theme-default", "theme-old", "theme-green", "theme-rose-navy"];
 
 const MainNav: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -31,7 +31,7 @@ const MainNav: React.FC = () => {
             <img
               src="/farbpalette.png"
               alt="farbpalette"
-              className="flag-icon"
+              className="flag-icon cursor-pointer"
             />
           </button>
           <a href="/" title="Deutsch" style={{ opacity: isEN ? 0.4 : 1 }}>

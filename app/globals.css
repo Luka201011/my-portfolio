@@ -14,7 +14,7 @@
 }
 
 html.theme-old {
-  --color-bg: #f5f5f5;
+  --color-bg: rgb(200, 200, 200);
   --color-second: #3a5f9a;
   --color-btn-hover: #619de2;
   --color-btn-back: #767d88;
@@ -33,6 +33,17 @@ html.theme-green {
   --color-card-bg-white: #ffffff;
   --color-card-border: #a7f3d0;
   --color-bg-akcent: #d1ece1;
+}
+
+html.theme-rose-navy {
+  --color-bg: #f0f2f5;
+  --color-second: #1e3a5f;
+  --color-btn-hover: #e11d6a;
+  --color-btn-back: #64748b;
+  --color-text-black: #171717;
+  --color-card-bg-white: #ffffff;
+  --color-card-border: #cbd5e1;
+  --color-bg-akcent: #e2e8f0;
 }
 
 body {
