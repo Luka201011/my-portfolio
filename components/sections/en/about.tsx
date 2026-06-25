@@ -13,26 +13,23 @@ export default function AboutSection() {
   return (
     <section id="about" className="mt-10 lg:mt-45">
       <div>
-        <h2 className="text-center text-4xl font-bold">Über mich</h2>
+        <h2 className="text-center text-4xl font-bold">About me</h2>
       </div>
       <div className="pl-7 pr-7 xl:grid xl:grid-cols-8">
         <div className="card-body bg-card-bg-white mt-10 xl:col-span-3 xl:col-start-2 xl:row-start-1 md:mt-15">
           <p className="p-2 text-center">
-            Hey! Ich bin <strong>Luka Jevremovic</strong>, geboren im Jahr 2010,
-            und habe eine grosse Leidenschaft für Computer, Technik,
-            Naturwissenschaften, Programmieren und Mathematik, weshalb ich meine
-            Zukunft in der Informatik sehe. Ich habe mich für den{" "}
-            <strong>Beruf Informatiker Applikationsentwicklung</strong>{" "}
-            entschieden, weil ich eigene{" "}
-            <strong>Softwarelösungen entwickeln</strong> möchte und es spannend
-            finde, wie aus einer Idee Schritt für Schritt eine funktionierende
-            Anwendung entsteht. Mit dieser Website zeige ich,{" "}
-            <strong>welche Fähigkeiten ich bereits aufgebaut habe</strong>, und
-            teile meine Leidenschaft für die Informatik. Ich zeichne mich durch
-            Ehrlichkeit, Teamfähigkeit, Sorgfalt und eine konzentrierte
-            Arbeitsweise aus. Mein <strong>Traum</strong> ist es, ein Studium in{" "}
-            <strong>Wirtschaftsinformatik oder Cybersecurity</strong> zu
-            absolvieren.
+            Hey! I'm <strong>Luka Jevremovic</strong>, born in 2010, and I have
+            a great passion for computers, technology, science, programming, and
+            mathematics, which is why I see my future in computer science. I
+            decided to pursue the{" "}
+            <strong>profession of IT application development</strong> because I
+            want to <strong>create my own software solutions</strong> and find
+            it fascinating how an idea gradually turns into a fully functional
+            application. With this website, I want to show{" "}
+            <strong>the skills I have already developed</strong> and share my
+            passion for computer science. I consider myself honest, a team
+            player, careful, and focused in my work. My <strong>dream</strong>{" "}
+            is to study <strong>business informatics or cybersecurity</strong>.
           </p>
         </div>
 
@@ -51,24 +48,24 @@ export default function AboutSection() {
         >
           <div className="front-card-about bg-card-bg-white p-5">
             <p className="p-2 text-center">
-              In meiner <strong>Freizeit</strong> verbringe ich viel Zeit{" "}
-              <strong>draussen mit Freunden</strong> und bin gerne aktiv.
-              Besonders mag ich das{" "}
-              <strong>Tanzen serbischer Volkstänze</strong>, da es mir Spass
-              macht und mir hilft,{" "}
-              <strong>meine Kultur zu pflegen und Freundschaften</strong>{" "}
-              aufzubauen. Zusätzlich spiele ich{" "}
-              <strong>gerne Basketball.</strong>
+              In my <strong>free time</strong>, I spend a lot of time{" "}
+              <strong>outdoors with friends</strong> and enjoy being active. I
+              especially like <strong>dancing Serbian folk dances</strong>,
+              because it’s fun and helps me{" "}
+              <strong>
+                stay connected to my culture and build friendships
+              </strong>
+              . Additionally, I <strong>enjoy playing basketball.</strong>
             </p>
             <button
               className="btn bg-second text-white hover:bg-btn-hover mt-2 flex justify-center items-center text-center"
               onClick={() => handleFlip("hobby")}
             >
-              Mehr anzeigen
+              View more
             </button>
           </div>
           <div className="back-card-about bg-card-bg-white xl:h-auto p-5 xl:p-3">
-            <h2 className="p-2 text-center font-medium text-xl">Videos</h2>
+            <h2 className="p-2 text-center font-medium text-xl">videos</h2>
             <div className=" flex flex-col gap-5 2xl:gap-12 xl:flex-row xl:gap-5 md:gap-10 md:flex-row">
               <div>
                 <iframe
@@ -95,7 +92,7 @@ export default function AboutSection() {
               className="btn-2 bg-btn-back text-white mt-6 flex justify-center items-center text-center"
               onClick={() => handleFlip("hobby")}
             >
-              zurück
+              Return
             </button>
           </div>
         </div>

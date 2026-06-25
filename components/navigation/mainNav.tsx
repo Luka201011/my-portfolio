@@ -26,6 +26,14 @@ const MainNav: React.FC = () => {
     }
   };
 
+  const labels = {
+    home: "Home",
+    about: isEN ? "About me" : "Über mich",
+    competences: isEN ? "Skills" : "Kompetenzen",
+    projects: isEN ? "Projects" : "Projekte",
+    contact: isEN ? "Contact" : "Kontakt",
+  };
+
   return (
     <nav id="Navigation" className="w-full bg-card-border">
       <div className="flex items-center justify-between px-6 py-3">
@@ -52,33 +60,35 @@ const MainNav: React.FC = () => {
           </a>
         </div>
 
+        {/* Desktop Navigation */}
         <ul className="hidden xl:flex items-center gap-8 list-none m-0">
           <li>
             <a href="#Navigation" className="text-white font-medium">
-              Home
+              {labels.home}
             </a>
           </li>
           <li>
             <a href="#about" className="text-white font-medium">
-              Über mich
+              {labels.about}
             </a>
           </li>
           <li>
             <a href="#competences" className="text-white font-medium">
-              Kompetenzen
+              {labels.competences}
             </a>
           </li>
           <li>
             <a href="#projects" className="text-white font-medium">
-              Projekte
+              {labels.projects}
             </a>
           </li>
           <li>
             <a href="#contact" className="text-white font-medium">
-              Kontakt
+              {labels.contact}
             </a>
           </li>
         </ul>
+
         <button
           type="button"
           onClick={() => setIsOpen(!isOpen)}
@@ -106,6 +116,7 @@ const MainNav: React.FC = () => {
         </button>
       </div>
 
+      {/* Mobile Navigation */}
       <div
         style={{
           maxHeight: isOpen ? "400px" : "0",
@@ -120,7 +131,7 @@ const MainNav: React.FC = () => {
               onClick={() => setIsOpen(false)}
               className="block py-3 text-white font-medium border-b border-white/20"
             >
-              Home
+              {labels.home}
             </a>
           </li>
           <li>
@@ -129,7 +140,7 @@ const MainNav: React.FC = () => {
               onClick={() => setIsOpen(false)}
               className="block py-3 text-white font-medium border-b border-white/20"
             >
-              Über mich
+              {labels.about}
             </a>
           </li>
           <li>
@@ -138,7 +149,7 @@ const MainNav: React.FC = () => {
               onClick={() => setIsOpen(false)}
               className="block py-3 text-white font-medium border-b border-white/20"
             >
-              Kompetenzen
+              {labels.competences}
             </a>
           </li>
           <li>
@@ -147,7 +158,7 @@ const MainNav: React.FC = () => {
               onClick={() => setIsOpen(false)}
               className="block py-3 text-white font-medium border-b border-white/20"
             >
-              Projekte
+              {labels.projects}
             </a>
           </li>
           <li>
@@ -156,7 +167,7 @@ const MainNav: React.FC = () => {
               onClick={() => setIsOpen(false)}
               className="block py-3 text-white font-medium"
             >
-              Kontakt
+              {labels.contact}
             </a>
           </li>
         </ul>
