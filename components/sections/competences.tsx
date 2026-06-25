@@ -12,6 +12,16 @@ export default function CompetencesSection() {
     }
   };
 
+  const [areCardsVisible, setAreCardsVisible] = useState<boolean>(false);
+
+  const handleShowHiddenCards = () => {
+    if (areCardsVisible === true) {
+      setAreCardsVisible(false);
+    } else {
+      setAreCardsVisible(true);
+    }
+  };
+
   return (
     <section id="competences" className="mt-30">
       <div>
@@ -72,7 +82,7 @@ export default function CompetencesSection() {
             <p className="text-2xl font-semibold">Angular</p>
           </div>
           <div className="back-card-competences bg-second text-white">
-            <p className="text-2xl font-semibold">Grundkenntnisse</p>
+            <p className="text-2xl font-semibold">Fortgeschritten</p>
           </div>
         </div>
 
@@ -85,7 +95,7 @@ export default function CompetencesSection() {
             <p className="text-2xl font-semibold">TypeScript</p>
           </div>
           <div className="back-card-competences bg-second text-white">
-            <p className="text-2xl font-semibold">Grundkenntnisse</p>
+            <p className="text-2xl font-semibold">Fortgeschritten</p>
           </div>
         </div>
 
@@ -102,10 +112,52 @@ export default function CompetencesSection() {
           </div>
         </div>
 
-        {/* Mehr anzeigen Button */}
-        <div className="btn bg-second text-white hover:bg-btn-hover justify-self-center mt-8 xl:col-start-2 xl:col-span-1 md:col-span-2">
-          <p>Mehr anzeigen</p>
+        {/* SQL Karte */}
+        <div
+          className={`card-body-competences w-full mt-8 xl:mt-0 ${!areCardsVisible ? "hidden" : ""} ${activeCard === "sql" ? "flipped" : ""}`}
+          onClick={() => handleFlip("sql")}
+        >
+          <div className="front-card-competences bg-card-bg-white">
+            <p className="text-2xl font-semibold">SQL</p>
+          </div>
+          <div className="back-card-competences bg-second text-white">
+            <p className="text-2xl font-semibold">Grundkenntnisse</p>
+          </div>
+          -
         </div>
+
+        {/* JAVA Karte */}
+        <div
+          className={`card-body-competences w-full mt-8 xl:mt-0 ${!areCardsVisible ? "hidden" : ""} ${activeCard === "java" ? "flipped" : ""}`}
+          onClick={() => handleFlip("java")}
+        >
+          <div className="front-card-competences bg-card-bg-white">
+            <p className="text-2xl font-semibold">Java</p>
+          </div>
+          <div className="back-card-competences bg-second text-white">
+            <p className="text-2xl font-semibold">Grundkenntnisse</p>
+          </div>
+        </div>
+
+        {/* React Karte */}
+        <div
+          className={`card-body-competences w-full mt-8 xl:mt-0 ${!areCardsVisible ? "hidden" : ""} ${activeCard === "react" ? "flipped" : ""}`}
+          onClick={() => handleFlip("react")}
+        >
+          <div className="front-card-competences bg-card-bg-white">
+            <p className="text-2xl font-semibold">React</p>
+          </div>
+          <div className="back-card-competences bg-second text-white">
+            <p className="text-2xl font-semibold">Fortgeschritten</p>
+          </div>
+        </div>
+
+        <button
+          onClick={handleShowHiddenCards}
+          className="btn bg-second text-white hover:bg-btn-hover justify-self-center mt-8 xl:col-start-2 xl:col-span-1 md:col-span-2"
+        >
+          {areCardsVisible ? "Weniger anzeigen" : "Mehr anzeigen"}
+        </button>
       </div>
     </section>
   );

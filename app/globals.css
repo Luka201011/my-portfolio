@@ -35,15 +35,26 @@ html.theme-green {
   --color-bg-akcent: #d1ece1;
 }
 
-html.theme-rose-navy {
+html.theme-RoseNavy {
   --color-bg: #f0f2f5;
-  --color-second: #1e3a5f;
+  --color-second: #e11d6a; /* die alternative farbe für second fals hover funktioniert und die anderen farben nicht zu ähnlich aussehen #1e3a5f */
   --color-btn-hover: #e11d6a;
   --color-btn-back: #64748b;
   --color-text-black: #171717;
   --color-card-bg-white: #ffffff;
   --color-card-border: #cbd5e1;
   --color-bg-akcent: #e2e8f0;
+}
+
+html.theme-viollet {
+  --color-bg: #f3f1fc;
+  --color-second: #7c3aed;
+  --color-btn-hover: #14b8a6;
+  --color-btn-back: #6b7280;
+  --color-text-black: #171717;
+  --color-card-bg-white: #ffffff;
+  --color-card-border: #ddd6fe;
+  --color-bg-akcent: #ede9fe;
 }
 
 body {

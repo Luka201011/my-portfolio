@@ -64,19 +64,19 @@ export default function ProjectsSection() {
                 insbesondere Scrum, um optimal auf den Geschäftsalltag
                 vorbereitet zu sein.
               </p>
-              <div
+              <button
                 className="btn bg-second hover:bg-btn-hover text-white justify-self-center mt-8"
                 onClick={() => handleFlip("minion")}
               >
-                <p>Mehr Infos</p>
-              </div>
+                Mehr Infos
+              </button>
             </div>
           </div>
-          <div className="back-card-project flex-col">
+          <div className="back-card-project flex-col bg-card-bg-white">
             <div>
               <h2 className="text-lg font-bold">Meine Arbeit</h2>
             </div>
-            <div className="title-projects-line"></div>
+            <div className="title-projects-line bg-second"></div>
             <div className="m-2">
               <p className="mb-2">Das konnte ich alles umsetzten:</p>
               <div>
@@ -141,19 +141,19 @@ export default function ProjectsSection() {
                 die Mitarbeit an einem interaktiven Tool zur Unterstützung von
                 Sponsoring-Aktivitäten bei Swisscom.
               </p>
-              <div
+              <button
                 className="btn bg-second text-white justify-self-center mt-8"
                 onClick={() => handleFlip("apps")}
               >
-                <p>Mehr Infos</p>
-              </div>
+                Mehr Infos
+              </button>
             </div>
           </div>
-          <div className="back-card-project flex-col">
+          <div className="back-card-project flex-col bg-card-bg-white">
             <div>
               <h2 className="text-lg font-bold">Meine Arbeit</h2>
             </div>
-            <div className="title-projects-line"></div>
+            <div className="title-projects-line bg-second"></div>
             <div className="m-2">
               <p className="mb-2">Das konnte ich alles umsetzten:</p>
               <div>

@@ -60,12 +60,12 @@ export default function AboutSection() {
               aufzubauen. Zusätzlich spiele ich{" "}
               <strong>gerne Basketball.</strong>
             </p>
-            <div
+            <button
               className="btn bg-second text-white hover:bg-btn-hover mt-2 flex justify-center items-center text-center"
               onClick={() => handleFlip("hobby")}
             >
-              <p>Mehr anzeigen</p>
-            </div>
+              Mehr anzeigen
+            </button>
           </div>
           <div className="back-card-about bg-card-bg-white xl:h-auto p-5 xl:p-3">
             <h2 className="p-2 text-center font-medium text-xl">videos</h2>
@@ -91,12 +91,12 @@ export default function AboutSection() {
                 ></iframe>
               </div>
             </div>
-            <div
+            <button
               className="btn-2 bg-btn-back text-white mt-6 flex justify-center items-center text-center"
               onClick={() => handleFlip("hobby")}
             >
-              <p>zurück</p>
-            </div>
+              zurück
+            </button>
           </div>
         </div>
       </div>

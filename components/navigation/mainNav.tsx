@@ -3,7 +3,13 @@
 import { useState } from "react";
 import { usePathname } from "next/navigation";
 
-const themes = ["theme-default", "theme-old", "theme-green", "theme-rose-navy"];
+const themes = [
+  "theme-default",
+  "theme-old",
+  "theme-green",
+  "theme-RoseNavy",
+  "theme-viollet",
+];
 
 const MainNav: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
