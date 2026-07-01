@@ -4,12 +4,10 @@ export default function AboutSection() {
   const [activeCard, setActiveCard] = useState<string | null>(null);
 
   const handleFlip = (cardId: string) => {
-    if (activeCard === cardId) {
-      setActiveCard(null);
-    } else {
-      setActiveCard(cardId);
-    }
+    if (activeCard === cardId) setActiveCard(null);
+    else setActiveCard(cardId);
   };
+
   return (
     <section id="about" className="mt-10 lg:mt-45">
       <div>

@@ -69,7 +69,7 @@ export default function CompetencesSection() {
             <p className="text-2xl font-semibold">JavaScript</p>
           </div>
           <div className="back-card-competences bg-second text-white">
-            <p className="text-2xl font-semibold">Grundkenntnisse</p>
+            <p className="text-2xl font-semibold">Erweiterte Kenntnisse</p>
           </div>
         </div>
 
@@ -95,7 +95,7 @@ export default function CompetencesSection() {
             <p className="text-2xl font-semibold">TypeScript</p>
           </div>
           <div className="back-card-competences bg-second text-white">
-            <p className="text-2xl font-semibold">Fortgeschritten</p>
+            <p className="text-2xl font-semibold">Erweiterte Kenntnisse</p>
           </div>
         </div>
 
@@ -108,7 +108,7 @@ export default function CompetencesSection() {
             <p className="text-2xl font-semibold">SDX</p>
           </div>
           <div className="back-card-competences bg-second text-white">
-            <p className="text-2xl font-semibold">Fortgeschritten</p>
+            <p className="text-2xl font-semibold">Erweiterte Kenntnisse</p>
           </div>
         </div>
 
@@ -148,7 +148,7 @@ export default function CompetencesSection() {
             <p className="text-2xl font-semibold">React</p>
           </div>
           <div className="back-card-competences bg-second text-white">
-            <p className="text-2xl font-semibold">Fortgeschritten</p>
+            <p className="text-2xl font-semibold">Erweiterte Kenntnisse</p>
           </div>
         </div>
 
