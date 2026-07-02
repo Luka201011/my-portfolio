@@ -2,19 +2,53 @@
 import { useState } from "react";
 import { Trans } from "@lingui/react/macro";
 
+type Level = "grund" | "fortgeschritten" | "erweitert";
+
+interface Competence {
+  id: string;
+  name: string;
+  level: Level;
+  alwaysVisible: boolean;
+}
+
+const levelLabels: Record<Level, React.ReactNode> = {
+  grund: <Trans>Grundkenntnisse</Trans>,
+  fortgeschritten: <Trans>Fortgeschritten</Trans>,
+  erweitert: <Trans>Erweiterte Kenntnisse</Trans>,
+};
+
+const competences: Competence[] = [
+  { id: "html", name: "HTML", level: "fortgeschritten", alwaysVisible: true },
+  { id: "css", name: "CSS", level: "fortgeschritten", alwaysVisible: true },
+  {
+    id: "javascript",
+    name: "JavaScript",
+    level: "erweitert",
+    alwaysVisible: true,
+  },
+  { id: "angular", name: "Angular", level: "grund", alwaysVisible: true },
+  {
+    id: "typescript",
+    name: "TypeScript",
+    level: "erweitert",
+    alwaysVisible: true,
+  },
+  { id: "sdx", name: "SDX", level: "erweitert", alwaysVisible: true },
+  { id: "sql", name: "SQL", level: "grund", alwaysVisible: false },
+  { id: "java", name: "Java", level: "grund", alwaysVisible: false },
+  { id: "react", name: "React", level: "erweitert", alwaysVisible: false },
+];
+
 export default function CompetencesSection() {
   const [activeCard, setActiveCard] = useState<string | null>(null);
-
-  const handleFlip = (cardId: string) => {
-    if (activeCard === cardId) setActiveCard(null);
-    else setActiveCard(cardId);
-  };
-
   const [areCardsVisible, setAreCardsVisible] = useState<boolean>(false);
 
+  const handleFlip = (cardId: string) => {
+    setActiveCard((prev) => (prev === cardId ? null : cardId));
+  };
+
   const handleShowHiddenCards = () => {
-    if (areCardsVisible === true) setAreCardsVisible(false);
-    else setAreCardsVisible(true);
+    setAreCardsVisible((prev) => !prev);
   };
 
   return (
@@ -26,146 +60,33 @@ export default function CompetencesSection() {
       </div>
 
       <div className="flex flex-col xl:grid xl:grid-cols-3 md:grid md:grid-cols-2 gap-8 justify-center items-center mt-20 px-7">
-        {/* HTML Karte */}
-        <div
-          className={`card-body-competences w-full ${activeCard === "html" ? "flipped" : ""}`}
-          onClick={() => handleFlip("html")}
-        >
-          <div className="front-card-competences bg-card-bg-white">
-            <p className="text-2xl font-semibold">HTML</p>
-            <img
-              src="/klicken.png"
-              alt="Hinweis das es anklickbar ist"
-              className="klicken-icon"
-            />
+        {competences.map((comp) => (
+          <div
+            key={comp.id}
+            className={`card-body-competences w-full mt-8 xl:mt-0 ${
+              comp.id !== "html" ? "" : ""
+            } ${!comp.alwaysVisible && !areCardsVisible ? "hidden" : ""} ${
+              activeCard === comp.id ? "flipped" : ""
+            }`}
+            onClick={() => handleFlip(comp.id)}
+          >
+            <div className="front-card-competences bg-card-bg-white">
+              <p className="text-2xl font-semibold">{comp.name}</p>
+              {comp.id === "html" && (
+                <img
+                  src="/klicken.png"
+                  alt="Hinweis das es anklickbar ist"
+                  className="klicken-icon"
+                />
+              )}
+            </div>
+            <div className="back-card-competences bg-second text-white">
+              <p className="text-2xl font-semibold">
+                {levelLabels[comp.level]}
+              </p>
+            </div>
           </div>
-          <div className="back-card-competences bg-second text-white">
-            <p className="text-2xl font-semibold">
-              <Trans>Fortgeschritten</Trans>
-            </p>
-          </div>
-        </div>
-
-        {/* CSS Karte */}
-        <div
-          className={`card-body-competences w-full mt-8 xl:mt-0 md:mt-0 ${activeCard === "css" ? "flipped" : ""}`}
-          onClick={() => handleFlip("css")}
-        >
-          <div className="front-card-competences bg-card-bg-white">
-            <p className="text-2xl font-semibold">CSS</p>
-          </div>
-          <div className="back-card-competences bg-second text-white">
-            <p className="text-2xl font-semibold">
-              <Trans>Fortgeschritten</Trans>
-            </p>
-          </div>
-        </div>
-
-        {/* JavaScript Karte */}
-        <div
-          className={`card-body-competences w-full mt-8 xl:mt-0 ${activeCard === "javascript" ? "flipped" : ""}`}
-          onClick={() => handleFlip("javascript")}
-        >
-          <div className="front-card-competences bg-card-bg-white">
-            <p className="text-2xl font-semibold">JavaScript</p>
-          </div>
-          <div className="back-card-competences bg-second text-white">
-            <p className="text-2xl font-semibold">
-              <Trans>Erweiterte Kenntnisse</Trans>
-            </p>
-          </div>
-        </div>
-
-        {/* Angular Karte */}
-        <div
-          className={`card-body-competences w-full mt-8 xl:mt-0 ${activeCard === "angular" ? "flipped" : ""}`}
-          onClick={() => handleFlip("angular")}
-        >
-          <div className="front-card-competences bg-card-bg-white">
-            <p className="text-2xl font-semibold">Angular</p>
-          </div>
-          <div className="back-card-competences bg-second text-white">
-            <p className="text-2xl font-semibold">
-              <Trans>Grundkenntnisse</Trans>
-            </p>
-          </div>
-        </div>
-
-        {/* TypeScript Karte */}
-        <div
-          className={`card-body-competences w-full mt-8 xl:mt-0 ${activeCard === "typescript" ? "flipped" : ""}`}
-          onClick={() => handleFlip("typescript")}
-        >
-          <div className="front-card-competences bg-card-bg-white">
-            <p className="text-2xl font-semibold">TypeScript</p>
-          </div>
-          <div className="back-card-competences bg-second text-white">
-            <p className="text-2xl font-semibold">
-              <Trans>Erweiterte Kenntnisse</Trans>
-            </p>
-          </div>
-        </div>
-
-        {/* SDX Karte */}
-        <div
-          className={`card-body-competences w-full mt-8 xl:mt-0 ${activeCard === "sdx" ? "flipped" : ""}`}
-          onClick={() => handleFlip("sdx")}
-        >
-          <div className="front-card-competences bg-card-bg-white">
-            <p className="text-2xl font-semibold">SDX</p>
-          </div>
-          <div className="back-card-competences bg-second text-white">
-            <p className="text-2xl font-semibold">
-              <Trans>Erweiterte Kenntnisse</Trans>
-            </p>
-          </div>
-        </div>
-
-        {/* SQL Karte */}
-        <div
-          className={`card-body-competences w-full mt-8 xl:mt-0 ${!areCardsVisible ? "hidden" : ""} ${activeCard === "sql" ? "flipped" : ""}`}
-          onClick={() => handleFlip("sql")}
-        >
-          <div className="front-card-competences bg-card-bg-white">
-            <p className="text-2xl font-semibold">SQL</p>
-          </div>
-          <div className="back-card-competences bg-second text-white">
-            <p className="text-2xl font-semibold">
-              <Trans>Grundkenntnisse</Trans>
-            </p>
-          </div>
-          -
-        </div>
-
-        {/* JAVA Karte */}
-        <div
-          className={`card-body-competences w-full mt-8 xl:mt-0 ${!areCardsVisible ? "hidden" : ""} ${activeCard === "java" ? "flipped" : ""}`}
-          onClick={() => handleFlip("java")}
-        >
-          <div className="front-card-competences bg-card-bg-white">
-            <p className="text-2xl font-semibold">Java</p>
-          </div>
-          <div className="back-card-competences bg-second text-white">
-            <p className="text-2xl font-semibold">
-              <Trans>Grundkenntnisse</Trans>
-            </p>
-          </div>
-        </div>
-
-        {/* React Karte */}
-        <div
-          className={`card-body-competences w-full mt-8 xl:mt-0 ${!areCardsVisible ? "hidden" : ""} ${activeCard === "react" ? "flipped" : ""}`}
-          onClick={() => handleFlip("react")}
-        >
-          <div className="front-card-competences bg-card-bg-white">
-            <p className="text-2xl font-semibold">React</p>
-          </div>
-          <div className="back-card-competences bg-second text-white">
-            <p className="text-2xl font-semibold">
-              <Trans>Erweiterte Kenntnisse</Trans>
-            </p>
-          </div>
-        </div>
+        ))}
 
         <button
           onClick={handleShowHiddenCards}
