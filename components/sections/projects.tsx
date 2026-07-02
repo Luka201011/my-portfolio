@@ -1,19 +1,19 @@
 "use client";
 import { useState } from "react";
+import { Trans } from "@lingui/react/macro";
 export default function ProjectsSection() {
   const [activeCard, setActiveCard] = useState<string | null>(null);
 
   const handleFlip = (cardId: string) => {
-    if (activeCard === cardId) {
-      setActiveCard(null);
-    } else {
-      setActiveCard(cardId);
-    }
+    if (activeCard === cardId) setActiveCard(null);
+    else setActiveCard(cardId);
   };
   return (
     <section id="projects" className="mt-30">
       <div>
-        <h2 className="text-center text-4xl font-bold">Projekte</h2>
+        <h2 className="text-center text-4xl font-bold">
+          <Trans>Projekte</Trans>
+        </h2>
       </div>
       <div className="flex justify-center items-center mt-10 pl-7 pr-7 flex-col xl:grid xl:grid-cols-2 gap-8">
         <div className="card-body bg-card-bg-white text-center p-10">
@@ -28,14 +28,15 @@ export default function ProjectsSection() {
           </div>
           <div>
             <p className="mt-2">
-              {" "}
-              In den First Steps wurden mir die grundlegenden Kenntnisse und
-              Erwartungen vermittelt. Ich lernte die wichtigsten Tools kennen
-              und erhielt zahlreiche Einführungen. Dabei machte ich die ersten
-              Schritte meiner Lehre, lernte meinen Lernbegleiter, zukünftige
-              Arbeitskolleg*innen sowie die Swisscom kennen. Nach den First
-              Steps fühlte ich mich gut auf das Berufsleben während meiner
-              Ausbildung vorbereitet.
+              <Trans>
+                In den First Steps wurden mir die grundlegenden Kenntnisse und
+                Erwartungen vermittelt. Ich lernte die wichtigsten Tools kennen
+                und erhielt zahlreiche Einführungen. Dabei machte ich die ersten
+                Schritte meiner Lehre, lernte meinen Lernbegleiter, zukünftige
+                Arbeitskolleg*innen sowie die Swisscom kennen. Nach den First
+                Steps fühlte ich mich gut auf das Berufsleben während meiner
+                Ausbildung vorbereitet.
+              </Trans>
             </p>
           </div>
         </div>
@@ -55,43 +56,51 @@ export default function ProjectsSection() {
             </div>
             <div>
               <p className="mt-2">
-                {" "}
-                Das IT-Onboarding-Projekt hat mir erste technische Grundlagen
-                der Webentwicklung, darunter HTML, CSS, JavaScript, TypeScript
-                und Angular. Ich werden eine eigene Portfolio-Website erstellen
-                und in Gruppenarbeit eine kleine Web-Applikation entwickeln.
-                Dabei lernte ich die agilen Arbeitsprozesse bei Swisscom kennen,
-                insbesondere Scrum, um optimal auf den Geschäftsalltag
-                vorbereitet zu sein.
+                <Trans>
+                  Das IT-Onboarding-Projekt hat mir erste technische Grundlagen
+                  der Webentwicklung, darunter HTML, CSS, JavaScript, TypeScript
+                  und Angular. Ich werden eine eigene Portfolio-Website
+                  erstellen und in Gruppenarbeit eine kleine Web-Applikation
+                  entwickeln. Dabei lernte ich die agilen Arbeitsprozesse bei
+                  Swisscom kennen, insbesondere Scrum, um optimal auf den
+                  Geschäftsalltag vorbereitet zu sein.
+                </Trans>
               </p>
               <button
                 className="btn bg-second hover:bg-btn-hover text-white justify-self-center mt-8"
                 onClick={() => handleFlip("minion")}
               >
-                Mehr Infos
+                <Trans>Mehr Infos</Trans>
               </button>
             </div>
           </div>
           <div className="back-card-project flex-col bg-card-bg-white">
             <div>
-              <h2 className="text-lg font-bold">Meine Arbeit</h2>
+              <h2 className="text-lg font-bold">
+                <Trans>Meine Arbeit</Trans>
+              </h2>
             </div>
             <div className="title-projects-line bg-second"></div>
             <div className="m-2">
-              <p className="mb-2">Das konnte ich alles umsetzten:</p>
+              <p className="mb-2">
+                <Trans>Das konnte ich alles umsetzten:</Trans>
+              </p>
               <div>
                 <p>
                   <strong>Portfolio-Website:</strong>
-                  Ich habe eine Portfolio Website erstellt.
+                  <Trans>Ich habe eine Portfolio Website erstellt.</Trans>
                 </p>
               </div>
               <div>
                 <p>
-                  <strong>Taschenrechner:</strong>
-                  In einer Gruppenarbeit entwickelte ich mit meinen Teamkollegen
-                  einen einfachen Taschenrechner als Web-Applikation. Dabei
-                  übernahm ich die Implementierung der Grundfunktionen wie
-                  Addition, Subtraktion, Multiplikation und Division.
+                  <Trans>
+                    <strong>Taschenrechner:</strong>
+                    In einer Gruppenarbeit entwickelte ich mit meinen
+                    Teamkollegen einen einfachen Taschenrechner als
+                    Web-Applikation. Dabei übernahm ich die Implementierung der
+                    Grundfunktionen wie Addition, Subtraktion, Multiplikation
+                    und Division.
+                  </Trans>
                 </p>
               </div>
               <div>
@@ -103,7 +112,7 @@ export default function ProjectsSection() {
                     target="_blank"
                     className="underline"
                   >
-                    Taschenrechner
+                    <Trans>Taschenrechner</Trans>
                   </a>
                 </p>
               </div>
@@ -112,7 +121,9 @@ export default function ProjectsSection() {
               className="btn-2 bg-btn-back text-white mt-2 justify-self-center text-center"
               onClick={() => handleFlip("minion")}
             >
-              <p>zurück</p>
+              <p>
+                <Trans>zurück</Trans>
+              </p>
             </div>
           </div>
         </div>
@@ -127,39 +138,44 @@ export default function ProjectsSection() {
             <div className="title-projects-line bg-second"></div>
             <div>
               <p>
-                <strong>Host:</strong> Petre Tudor
+                <strong>Host:</strong> Apps Team Frontend
               </p>
             </div>
             <div>
               <p className="mt-2">
-                {" "}
-                Das Apps Team gab mir einen praxisnahen Einblick in die
-                Entwicklung moderner Webapplikationen. Mit Technologien wie
-                Next.js konnte ich mein technisches Wissen erweitern und eigene
-                Komponenten entwickeln. Zudem lernte ich agile Methoden wie
-                Scrum kennen, die die Teamarbeit erleichtern. Ein Highlight war
-                die Mitarbeit an einem interaktiven Tool zur Unterstützung von
-                Sponsoring-Aktivitäten bei Swisscom.
+                <Trans>
+                  Das Apps Team gab mir einen praxisnahen Einblick in die
+                  Entwicklung moderner Webapplikationen. Mit Technologien wie
+                  Next.js konnte ich mein technisches Wissen erweitern und
+                  eigene Komponenten entwickeln. Zudem lernte ich agile Methoden
+                  wie Scrum kennen, die die Teamarbeit erleichtern. Ein
+                  Highlight war die Mitarbeit an einem interaktiven Tool zur
+                  Unterstützung von Sponsoring-Aktivitäten bei Swisscom.
+                </Trans>
               </p>
               <button
                 className="btn bg-second text-white justify-self-center mt-8"
                 onClick={() => handleFlip("apps")}
               >
-                Mehr Infos
+                <Trans>Mehr Infos</Trans>
               </button>
             </div>
           </div>
           <div className="back-card-project flex-col bg-card-bg-white">
             <div>
-              <h2 className="text-lg font-bold">Meine Arbeit</h2>
+              <h2 className="text-lg font-bold">
+                <Trans>Meine Arbeit</Trans>
+              </h2>
             </div>
             <div className="title-projects-line bg-second"></div>
             <div className="m-2">
-              <p className="mb-2">Das konnte ich alles umsetzten:</p>
+              <p className="mb-2">
+                <Trans>Das konnte ich alles umsetzten:</Trans>
+              </p>
               <div>
                 <p>
                   <strong>Portfolio-Website:</strong>
-                  Ich habe diese Portfolio Website erstellt.
+                  <Trans>Ich habe diese Portfolio Website erstellt.</Trans>
                 </p>
               </div>
             </div>
@@ -167,7 +183,9 @@ export default function ProjectsSection() {
               className="btn-2 bg-btn-back text-white mt-2 flex justify-center items-center text-center"
               onClick={() => handleFlip("apps")}
             >
-              <p>zurück</p>
+              <p>
+                <Trans>zurück</Trans>
+              </p>
             </div>
           </div>
         </div>

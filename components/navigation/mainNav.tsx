@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import { usePathname } from "next/navigation";
+import Link from "next/link";
+import { Trans } from "@lingui/macro";
 
 const themes = [
   "theme-default",
@@ -14,7 +16,11 @@ const themes = [
 const MainNav: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
+
+  // Erkennen, ob wir gerade auf Englisch (/en) sind, sonst greift Deutsch (/de)
   const isEN = pathname.startsWith("/en");
+  const currentLocalePrefix = isEN ? "/en" : "/de";
+
   const [themeIndex, setThemeIndex] = useState(0);
 
   const handleThemeChange = () => {
@@ -24,14 +30,6 @@ const MainNav: React.FC = () => {
     if (next != 0) {
       document.documentElement.classList.add(themes[next]);
     }
-  };
-
-  const labels = {
-    home: "Home",
-    about: isEN ? "About me" : "Über mich",
-    competences: isEN ? "Skills" : "Kompetenzen",
-    projects: isEN ? "Projects" : "Projekte",
-    contact: isEN ? "Contact" : "Kontakt",
   };
 
   return (
@@ -48,44 +46,63 @@ const MainNav: React.FC = () => {
               className="flag-icon cursor-pointer"
             />
           </button>
-          <a href="/" title="Deutsch" style={{ opacity: isEN ? 0.4 : 1 }}>
+
+          {/* Sprachwechsler Deutsch */}
+          <Link href="/de" title="Deutsch" style={{ opacity: isEN ? 0.4 : 1 }}>
             <img src="/flagge.png" alt="Deutsch" className="flag-icon" />
-          </a>
-          <a href="/en" title="English" style={{ opacity: isEN ? 1 : 0.4 }}>
+          </Link>
+
+          {/* Sprachwechsler Englisch */}
+          <Link href="/en" title="English" style={{ opacity: isEN ? 1 : 0.4 }}>
             <img
               src="/vereinigtes-konigreich.png"
               alt="Englisch"
               className="flag-icon"
             />
-          </a>
+          </Link>
         </div>
 
         {/* Desktop Navigation */}
         <ul className="hidden xl:flex items-center gap-8 list-none m-0">
           <li>
-            <a href="#Navigation" className="text-white font-medium">
-              {labels.home}
-            </a>
+            <Link
+              href={`${currentLocalePrefix}#Navigation`}
+              className="text-white font-medium"
+            >
+              <Trans>Home</Trans>
+            </Link>
           </li>
           <li>
-            <a href="#about" className="text-white font-medium">
-              {labels.about}
-            </a>
+            <Link
+              href={`${currentLocalePrefix}#about`}
+              className="text-white font-medium"
+            >
+              <Trans>Über mich</Trans>
+            </Link>
           </li>
           <li>
-            <a href="#competences" className="text-white font-medium">
-              {labels.competences}
-            </a>
+            <Link
+              href={`${currentLocalePrefix}#competences`}
+              className="text-white font-medium"
+            >
+              <Trans>Kompetenzen</Trans>
+            </Link>
           </li>
           <li>
-            <a href="#projects" className="text-white font-medium">
-              {labels.projects}
-            </a>
+            <Link
+              href={`${currentLocalePrefix}#projects`}
+              className="text-white font-medium"
+            >
+              <Trans>Projekte</Trans>
+            </Link>
           </li>
           <li>
-            <a href="#contact" className="text-white font-medium">
-              {labels.contact}
-            </a>
+            <Link
+              href={`${currentLocalePrefix}#contact`}
+              className="text-white font-medium"
+            >
+              <Trans>Kontakt</Trans>
+            </Link>
           </li>
         </ul>
 
@@ -126,49 +143,49 @@ const MainNav: React.FC = () => {
       >
         <ul className="flex flex-col list-none px-6 pb-3">
           <li>
-            <a
-              href="#Navigation"
+            <Link
+              href={`${currentLocalePrefix}#Navigation`}
               onClick={() => setIsOpen(false)}
               className="block py-3 text-white font-medium border-b border-white/20"
             >
-              {labels.home}
-            </a>
+              <Trans>Home</Trans>
+            </Link>
           </li>
           <li>
-            <a
-              href="#about"
+            <Link
+              href={`${currentLocalePrefix}#about`}
               onClick={() => setIsOpen(false)}
               className="block py-3 text-white font-medium border-b border-white/20"
             >
-              {labels.about}
-            </a>
+              <Trans>Über mich</Trans>
+            </Link>
           </li>
           <li>
-            <a
-              href="#competences"
+            <Link
+              href={`${currentLocalePrefix}#competences`}
               onClick={() => setIsOpen(false)}
               className="block py-3 text-white font-medium border-b border-white/20"
             >
-              {labels.competences}
-            </a>
+              <Trans>Kompetenzen</Trans>
+            </Link>
           </li>
           <li>
-            <a
-              href="#projects"
+            <Link
+              href={`${currentLocalePrefix}#projects`}
               onClick={() => setIsOpen(false)}
               className="block py-3 text-white font-medium border-b border-white/20"
             >
-              {labels.projects}
-            </a>
+              <Trans>Projekte</Trans>
+            </Link>
           </li>
           <li>
-            <a
-              href="#contact"
+            <Link
+              href={`${currentLocalePrefix}#contact`}
               onClick={() => setIsOpen(false)}
               className="block py-3 text-white font-medium"
             >
-              {labels.contact}
-            </a>
+              <Trans>Kontakt</Trans>
+            </Link>
           </li>
         </ul>
       </div>

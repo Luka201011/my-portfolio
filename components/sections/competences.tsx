@@ -1,31 +1,28 @@
 "use client";
 import { useState } from "react";
+import { Trans } from "@lingui/react/macro";
 
 export default function CompetencesSection() {
   const [activeCard, setActiveCard] = useState<string | null>(null);
 
   const handleFlip = (cardId: string) => {
-    if (activeCard === cardId) {
-      setActiveCard(null);
-    } else {
-      setActiveCard(cardId);
-    }
+    if (activeCard === cardId) setActiveCard(null);
+    else setActiveCard(cardId);
   };
 
   const [areCardsVisible, setAreCardsVisible] = useState<boolean>(false);
 
   const handleShowHiddenCards = () => {
-    if (areCardsVisible === true) {
-      setAreCardsVisible(false);
-    } else {
-      setAreCardsVisible(true);
-    }
+    if (areCardsVisible === true) setAreCardsVisible(false);
+    else setAreCardsVisible(true);
   };
 
   return (
     <section id="competences" className="mt-30">
       <div>
-        <h2 className="text-center text-4xl font-bold">Kompetenzen</h2>
+        <h2 className="text-center text-4xl font-bold">
+          <Trans>Kompetenzen</Trans>
+        </h2>
       </div>
 
       <div className="flex flex-col xl:grid xl:grid-cols-3 md:grid md:grid-cols-2 gap-8 justify-center items-center mt-20 px-7">
@@ -43,7 +40,9 @@ export default function CompetencesSection() {
             />
           </div>
           <div className="back-card-competences bg-second text-white">
-            <p className="text-2xl font-semibold">Fortgeschritten</p>
+            <p className="text-2xl font-semibold">
+              <Trans>Fortgeschritten</Trans>
+            </p>
           </div>
         </div>
 
@@ -56,7 +55,9 @@ export default function CompetencesSection() {
             <p className="text-2xl font-semibold">CSS</p>
           </div>
           <div className="back-card-competences bg-second text-white">
-            <p className="text-2xl font-semibold">Fortgeschritten</p>
+            <p className="text-2xl font-semibold">
+              <Trans>Fortgeschritten</Trans>
+            </p>
           </div>
         </div>
 
@@ -69,7 +70,9 @@ export default function CompetencesSection() {
             <p className="text-2xl font-semibold">JavaScript</p>
           </div>
           <div className="back-card-competences bg-second text-white">
-            <p className="text-2xl font-semibold">Erweiterte Kenntnisse</p>
+            <p className="text-2xl font-semibold">
+              <Trans>Erweiterte Kenntnisse</Trans>
+            </p>
           </div>
         </div>
 
@@ -82,7 +85,9 @@ export default function CompetencesSection() {
             <p className="text-2xl font-semibold">Angular</p>
           </div>
           <div className="back-card-competences bg-second text-white">
-            <p className="text-2xl font-semibold">Grundkenntnisse</p>
+            <p className="text-2xl font-semibold">
+              <Trans>Grundkenntnisse</Trans>
+            </p>
           </div>
         </div>
 
@@ -95,7 +100,9 @@ export default function CompetencesSection() {
             <p className="text-2xl font-semibold">TypeScript</p>
           </div>
           <div className="back-card-competences bg-second text-white">
-            <p className="text-2xl font-semibold">Erweiterte Kenntnisse</p>
+            <p className="text-2xl font-semibold">
+              <Trans>Erweiterte Kenntnisse</Trans>
+            </p>
           </div>
         </div>
 
@@ -108,7 +115,9 @@ export default function CompetencesSection() {
             <p className="text-2xl font-semibold">SDX</p>
           </div>
           <div className="back-card-competences bg-second text-white">
-            <p className="text-2xl font-semibold">Erweiterte Kenntnisse</p>
+            <p className="text-2xl font-semibold">
+              <Trans>Erweiterte Kenntnisse</Trans>
+            </p>
           </div>
         </div>
 
@@ -121,7 +130,9 @@ export default function CompetencesSection() {
             <p className="text-2xl font-semibold">SQL</p>
           </div>
           <div className="back-card-competences bg-second text-white">
-            <p className="text-2xl font-semibold">Grundkenntnisse</p>
+            <p className="text-2xl font-semibold">
+              <Trans>Grundkenntnisse</Trans>
+            </p>
           </div>
           -
         </div>
@@ -135,7 +146,9 @@ export default function CompetencesSection() {
             <p className="text-2xl font-semibold">Java</p>
           </div>
           <div className="back-card-competences bg-second text-white">
-            <p className="text-2xl font-semibold">Grundkenntnisse</p>
+            <p className="text-2xl font-semibold">
+              <Trans>Grundkenntnisse</Trans>
+            </p>
           </div>
         </div>
 
@@ -148,7 +161,9 @@ export default function CompetencesSection() {
             <p className="text-2xl font-semibold">React</p>
           </div>
           <div className="back-card-competences bg-second text-white">
-            <p className="text-2xl font-semibold">Erweiterte Kenntnisse</p>
+            <p className="text-2xl font-semibold">
+              <Trans>Erweiterte Kenntnisse</Trans>
+            </p>
           </div>
         </div>
 
@@ -156,7 +171,11 @@ export default function CompetencesSection() {
           onClick={handleShowHiddenCards}
           className="btn bg-second text-white hover:bg-btn-hover justify-self-center mt-8 xl:col-start-2 xl:col-span-1 md:col-span-2"
         >
-          {areCardsVisible ? "Weniger anzeigen" : "Mehr anzeigen"}
+          {areCardsVisible ? (
+            <Trans>Weniger anzeigen</Trans>
+          ) : (
+            <Trans>Mehr anzeigen</Trans>
+          )}
         </button>
       </div>
     </section>

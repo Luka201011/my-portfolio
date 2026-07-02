@@ -1,16 +1,26 @@
+"use client";
+import { useParams } from "next/navigation";
+import { Trans } from "@lingui/react/macro";
+
 export default function ContactSection() {
+  const { locale } = useParams<{ locale: string }>();
+  const cvFile =
+    locale === "en"
+      ? "./CV_from_Luka_Jevremovic.pdf"
+      : "./Lebenslauf_Luka_Jevremovic.pdf";
+
   return (
     <section id="contact" className="mt-30 w-full">
       <div>
         <h2 className="text-center text-4xl font-bold mb-10 xl:mb-20">
-          Kontakt
+          <Trans>Kontakt</Trans>
         </h2>
       </div>
       <div className="px-4 flex flex-col gap-10 md:grid md:grid-cols-2 xl:grid xl:grid-cols-2 xl:gap-16 xl:items-stretch xl:ml-45 xl:mr-45">
         <div className="card-body-contact bg-bg-akcent border-solid border-4 border-card-border w-full text-center flex flex-col justify-between items-center p-6 md:col-span-2 xl:col-span-1">
           <div>
             <h2 className="font-bold text-base mb-4 text-lg">
-              Aktueller Arbeitsort
+              <Trans>Aktueller Arbeitsort</Trans>
             </h2>
           </div>
           <div className="w-full h-[300px] md:h-[400px] xl:h-full xl:flex-grow">
@@ -29,7 +39,7 @@ export default function ContactSection() {
           <div className="card-body-contact bg-bg-akcent border-solid border-4 border-card-border w-full flex flex-col justify-center items-center p-6 md:col-span-1">
             <div>
               <h2 className="font-bold text-base text-center mb-4 text-lg">
-                Kontaktdaten
+                <Trans>Kontaktdaten</Trans>
               </h2>
             </div>
             <div className="text-field bg-card-bg-white border-2 border-solid border-black w-full flex justify-start items-start flex-col p-4">
@@ -87,7 +97,7 @@ export default function ContactSection() {
           <div className="card-body-contact bg-bg-akcent border-solid border-4 border-card-border w-full flex flex-col justify-center items-center p-6 md:col-span-1">
             <div>
               <h2 className="font-bold text-base text-center mb-4 text-lg">
-                Rand Informationen
+                <Trans>Rand Informationen</Trans>
               </h2>
             </div>
             <div className="text-field bg-card-bg-white border-2 border-solid border-black w-full flex justify-start items-start flex-col p-4">
@@ -98,17 +108,23 @@ export default function ContactSection() {
               </div>
               <div className="mt-3 w-full">
                 <p>
-                  <strong>Host:</strong> Petre Tudor
+                  <strong>Host:</strong> John Riordan
                 </p>
               </div>
               <div className="mt-3 w-full">
                 <p>
-                  <strong>Aktuelles Projekt:</strong> Apps Team
+                  <Trans>
+                    <strong>Aktuelles Projekt:</strong>
+                  </Trans>{" "}
+                  Apps Team
                 </p>
               </div>
               <div className="mt-3 w-full">
                 <p>
-                  <strong>Schultage:</strong> Montag, Dienstag
+                  <Trans>
+                    <strong>Schultage:</strong>
+                  </Trans>{" "}
+                  <Trans>Montag, Dienstag</Trans>
                 </p>
               </div>
             </div>
@@ -118,12 +134,8 @@ export default function ContactSection() {
       {/* Footer */}
       <footer className="footer bg-bg-akcent mt-16 flex items-center justify-center">
         <div className="btn bg-second text-white hover:bg-btn-hover">
-          <a
-            href="./Lebenslauf_Luka_Jevremovic.pdf"
-            target="_blank"
-            id="button-lebenslauf"
-          >
-            Lebenslauf Herunterladen
+          <a href={cvFile} target="_blank" id="button-lebenslauf">
+            <Trans>Lebenslauf Herunterladen</Trans>
           </a>
         </div>
         <div className="pfeil-rechts">

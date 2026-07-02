@@ -1,0 +1,230 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2026-07-01 13:19+0200\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: de\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
+
+#. placeholder {0}: areCardsVisible ? "Weniger anzeigen" : "Mehr anzeigen"
+#: components/sections/competences.tsx
+#~ msgid "{0}"
+#~ msgstr "{0}"
+
+#: components/sections/contact.tsx
+msgid "<0>Aktuelles Projekt:</0>"
+msgstr "<0>Aktuelles Projekt:</0>"
+
+#: components/sections/contact.tsx
+msgid "<0>Schultage:</0>"
+msgstr "<0>Schultage:</0>"
+
+#: components/sections/projects.tsx
+msgid "<0>Taschenrechner:</0>In einer Gruppenarbeit entwickelte ich mit meinen "
+"Teamkollegen einen einfachen Taschenrechner als Web-Applikation. Dabei "
+"übernahm ich die Implementierung der Grundfunktionen wie Addition, "
+"Subtraktion, Multiplikation und Division."
+msgstr "<0>Taschenrechner:</0>In einer Gruppenarbeit entwickelte ich mit meinen "
+"Teamkollegen einen einfachen Taschenrechner als Web-Applikation. Dabei "
+"übernahm ich die Implementierung der Grundfunktionen wie Addition, "
+"Subtraktion, Multiplikation und Division."
+
+#: app/[locale]/page.tsx
+msgid "1. Lehrjahr"
+msgstr "1. Lehrjahr"
+
+#: components/sections/contact.tsx
+msgid "Aktueller Arbeitsort"
+msgstr "Aktueller Arbeitsort"
+
+#: app/[locale]/page.tsx
+msgid "Applikationsentwickler"
+msgstr "Applikationsentwickler"
+
+#: components/sections/projects.tsx
+msgid "Das Apps Team gab mir einen praxisnahen Einblick in die Entwicklung "
+"moderner Webapplikationen. Mit Technologien wie Next.js konnte ich mein "
+"technisches Wissen erweitern und eigene Komponenten entwickeln. Zudem "
+"lernte ich agile Methoden wie Scrum kennen, die die Teamarbeit "
+"erleichtern. Ein Highlight war die Mitarbeit an einem interaktiven Tool "
+"zur Unterstützung von Sponsoring-Aktivitäten bei Swisscom."
+msgstr "Das Apps Team gab mir einen praxisnahen Einblick in die Entwicklung "
+"moderner Webapplikationen. Mit Technologien wie Next.js konnte ich mein "
+"technisches Wissen erweitern und eigene Komponenten entwickeln. Zudem "
+"lernte ich agile Methoden wie Scrum kennen, die die Teamarbeit "
+"erleichtern. Ein Highlight war die Mitarbeit an einem interaktiven Tool "
+"zur Unterstützung von Sponsoring-Aktivitäten bei Swisscom."
+
+#: components/sections/projects.tsx
+msgid "Das IT-Onboarding-Projekt hat mir erste technische Grundlagen der "
+"Webentwicklung, darunter HTML, CSS, JavaScript, TypeScript und Angular. "
+"Ich werden eine eigene Portfolio-Website erstellen und in Gruppenarbeit "
+"eine kleine Web-Applikation entwickeln. Dabei lernte ich die agilen "
+"Arbeitsprozesse bei Swisscom kennen, insbesondere Scrum, um optimal auf "
+"den Geschäftsalltag vorbereitet zu sein."
+msgstr "Das IT-Onboarding-Projekt hat mir erste technische Grundlagen der "
+"Webentwicklung, darunter HTML, CSS, JavaScript, TypeScript und Angular. "
+"Ich werden eine eigene Portfolio-Website erstellen und in Gruppenarbeit "
+"eine kleine Web-Applikation entwickeln. Dabei lernte ich die agilen "
+"Arbeitsprozesse bei Swisscom kennen, insbesondere Scrum, um optimal auf "
+"den Geschäftsalltag vorbereitet zu sein."
+
+#: components/sections/projects.tsx
+msgid "Das konnte ich alles umsetzten:"
+msgstr "Das konnte ich alles umsetzten:"
+
+#: components/sections/competences.tsx
+msgid "Erweiterte Kenntnisse"
+msgstr "Erweiterte Kenntnisse"
+
+#: components/sections/competences.tsx
+msgid "Fortgeschritten"
+msgstr "Fortgeschritten"
+
+#: components/sections/competences.tsx
+msgid "Grundkenntnisse"
+msgstr "Grundkenntnisse"
+
+#: components/sections/about.tsx
+msgid "Hey! Ich bin <0>Luka Jevremovic</0>, geboren im Jahr 2010, und habe eine "
+"grosse Leidenschaft für Computer, Technik, Naturwissenschaften, "
+"Programmieren und Mathematik, weshalb ich meine Zukunft in der "
+"Informatik sehe. Ich habe mich für den <1>Beruf Informatiker "
+"Applikationsentwicklung</1> entschieden, weil ich eigene "
+"<2>Softwarelösungen entwickeln</2> möchte und es spannend finde, wie aus "
+"einer Idee Schritt für Schritt eine funktionierende Anwendung entsteht. "
+"Mit dieser Website zeige ich, <3>welche Fähigkeiten ich bereits "
+"aufgebaut habe</3>, und teile meine Leidenschaft für die Informatik. Ich "
+"zeichne mich durch Ehrlichkeit, Teamfähigkeit, Sorgfalt und eine "
+"konzentrierte Arbeitsweise aus. Mein <4>Traum</4> ist es, ein Studium in "
+"<5>Wirtschaftsinformatik oder Cybersecurity</5> zu absolvieren."
+msgstr "Hey! Ich bin <0>Luka Jevremovic</0>, geboren im Jahr 2010, und habe "
+"eine grosse Leidenschaft für Computer, Technik, Naturwissenschaften, "
+"Programmieren und Mathematik, weshalb ich meine Zukunft in der "
+"Informatik sehe. Ich habe mich für den <1>Beruf Informatiker "
+"Applikationsentwicklung</1> entschieden, weil ich eigene "
+"<2>Softwarelösungen entwickeln</2> möchte und es spannend finde, wie "
+"aus einer Idee Schritt für Schritt eine funktionierende Anwendung "
+"entsteht. Mit dieser Website zeige ich, <3>welche Fähigkeiten ich "
+"bereits aufgebaut habe</3>, und teile meine Leidenschaft für die "
+"Informatik. Ich zeichne mich durch Ehrlichkeit, Teamfähigkeit, Sorgfalt "
+"und eine konzentrierte Arbeitsweise aus. Mein <4>Traum</4> ist es, ein "
+"Studium in <5>Wirtschaftsinformatik oder Cybersecurity</5> zu "
+"absolvieren."
+
+#: app/[locale]/page.tsx
+msgid "Ich bin im ersten Lehrjahr als Applikationsentwickler bei Swisscom "
+"tätig. Es freut mich, dass du auf meine Website bist und wünsche dir "
+"viel Spass beim Lesen."
+msgstr "Ich bin im ersten Lehrjahr als Applikationsentwickler bei Swisscom "
+"tätig. Es freut mich, dass du auf meine Website bist und wünsche dir "
+"viel Spass beim Lesen."
+
+#: components/sections/projects.tsx
+msgid "Ich habe diese Portfolio Website erstellt."
+msgstr "Ich habe diese Portfolio Website erstellt."
+
+#: components/sections/projects.tsx
+msgid "Ich habe eine Portfolio Website erstellt."
+msgstr "Ich habe eine Portfolio Website erstellt."
+
+#: components/sections/projects.tsx
+msgid "In den First Steps wurden mir die grundlegenden Kenntnisse und "
+"Erwartungen vermittelt. Ich lernte die wichtigsten Tools kennen und "
+"erhielt zahlreiche Einführungen. Dabei machte ich die ersten Schritte "
+"meiner Lehre, lernte meinen Lernbegleiter, zukünftige "
+"Arbeitskolleg*innen sowie die Swisscom kennen. Nach den First Steps "
+"fühlte ich mich gut auf das Berufsleben während meiner Ausbildung "
+"vorbereitet."
+msgstr "In den First Steps wurden mir die grundlegenden Kenntnisse und "
+"Erwartungen vermittelt. Ich lernte die wichtigsten Tools kennen und "
+"erhielt zahlreiche Einführungen. Dabei machte ich die ersten Schritte "
+"meiner Lehre, lernte meinen Lernbegleiter, zukünftige "
+"Arbeitskolleg*innen sowie die Swisscom kennen. Nach den First Steps "
+"fühlte ich mich gut auf das Berufsleben während meiner Ausbildung "
+"vorbereitet."
+
+#: components/sections/about.tsx
+msgid "In meiner <0>Freizeit</0> verbringe ich viel Zeit <1>draussen mit "
+"Freunden</1> und bin gerne aktiv. Besonders mag ich das <2>Tanzen "
+"serbischer Volkstänze</2>, da es mir Spass macht und mir hilft, <3>meine "
+"Kultur zu pflegen und Freundschaften</3> aufzubauen. Zusätzlich spiele "
+"ich <4>gerne Basketball.</4>"
+msgstr "In meiner <0>Freizeit</0> verbringe ich viel Zeit <1>draussen mit "
+"Freunden</1> und bin gerne aktiv. Besonders mag ich das <2>Tanzen "
+"serbischer Volkstänze</2>, da es mir Spass macht und mir hilft, "
+"<3>meine Kultur zu pflegen und Freundschaften</3> aufzubauen. "
+"Zusätzlich spiele ich <4>gerne Basketball.</4>"
+
+#: app/[locale]/page.tsx
+msgid "Informatiker"
+msgstr "Informatiker"
+
+#: components/sections/competences.tsx
+msgid "Kompetenzen"
+msgstr "Kompetenzen"
+
+#: components/sections/contact.tsx
+msgid "Kontakt"
+msgstr "Kontakt"
+
+#: components/sections/contact.tsx
+msgid "Kontaktdaten"
+msgstr "Kontaktdaten"
+
+#: components/sections/contact.tsx
+msgid "Lebenslauf Herunterladen"
+msgstr "Lebenslauf Herunterladen"
+
+#: components/sections/about.tsx
+#: components/sections/competences.tsx
+msgid "Mehr anzeigen"
+msgstr "Mehr anzeigen"
+
+#: components/sections/projects.tsx
+msgid "Mehr Infos"
+msgstr "Mehr Infos"
+
+#: components/sections/projects.tsx
+msgid "Meine Arbeit"
+msgstr "Meine Arbeit"
+
+#: components/sections/contact.tsx
+msgid "Montag, Dienstag"
+msgstr "Montag, Dienstag"
+
+#: components/sections/projects.tsx
+msgid "Projekte"
+msgstr "Projekte"
+
+#: components/sections/contact.tsx
+msgid "Rand Informationen"
+msgstr "Rand Informationen"
+
+#: components/sections/projects.tsx
+msgid "Taschenrechner"
+msgstr "Taschenrechner"
+
+#: components/sections/about.tsx
+msgid "Über mich"
+msgstr "Über mich"
+
+#: components/sections/about.tsx
+msgid "Videos"
+msgstr "Videos"
+
+#: components/sections/competences.tsx
+msgid "Weniger anzeigen"
+msgstr "Weniger anzeigen"
+
+#: components/sections/about.tsx
+#: components/sections/projects.tsx
+msgid "zurück"
+msgstr "zurück"

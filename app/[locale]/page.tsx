@@ -1,7 +1,9 @@
-import AboutSection from "../../components/sections/en/about";
-import CompetencesSection from "../../components/sections/en/competences";
-import ProjectsSection from "../../components/sections/en/projects";
-import ContactSection from "../../components/sections/en/contact";
+"use client";
+import AboutSection from "../../components/sections/about";
+import CompetencesSection from "../../components/sections/competences";
+import ProjectsSection from "../../components/sections/projects";
+import ContactSection from "../../components/sections/contact";
+import { Trans } from "@lingui/react/macro";
 
 export default function Home() {
   return (
@@ -13,7 +15,7 @@ export default function Home() {
               Luka Jevremovic
             </h1>
             <h2 className="text-xl font-normal xl:text-3xl">
-              Computer Scientist
+              <Trans>Informatiker</Trans>
             </h2>
           </div>
           <div className="flex justify-center mt-15">
@@ -25,16 +27,20 @@ export default function Home() {
           </div>
           <div className="flex-col flex justify-center items-center mt-15">
             <h2 className="text-xl font-normal xl:text-3xl">
-              Application Developer
+              <Trans>Applikationsentwickler</Trans>
             </h2>
-            <h1 className="font-bold text-2xl xl:text-4xl">First year</h1>
+            <h1 className="font-bold text-2xl xl:text-4xl">
+              <Trans>1. Lehrjahr</Trans>
+            </h1>
           </div>
         </div>
         <div className="mx-auto  text-center p-8 mt-8 xl:mt-10 xl:w-100 xl:text-xl md:w-80">
           <p>
-            I am currently in my first year of training as an application
-            developer at Swisscom. I'm glad you've visited my website and wish
-            you an enjoyable time reading through it.
+            <Trans>
+              Ich bin im ersten Lehrjahr als Applikationsentwickler bei Swisscom
+              tätig. Es freut mich, dass du auf meine Website bist und wünsche
+              dir viel Spass beim Lesen.
+            </Trans>
           </p>
         </div>
       </div>
