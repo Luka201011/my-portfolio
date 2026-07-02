@@ -1,8 +1,8 @@
 "use client";
 
 import { Trans } from "@lingui/react/macro";
-
 import { useState } from "react";
+
 export default function AboutSection() {
   const [activeCard, setActiveCard] = useState<string | null>(null);
 
@@ -18,8 +18,8 @@ export default function AboutSection() {
           <Trans>Über mich</Trans>
         </h2>
       </div>
-      <div className="pl-7 pr-7 xl:grid xl:grid-cols-8">
-        <div className="card-body bg-card-bg-white mt-10 xl:col-span-3 xl:col-start-2 xl:row-start-1 md:mt-15">
+      <div className="pl-7 pr-7 gap-6 md:grid md:grid-cols-12 xl:grid xl:grid-cols-10">
+        <div className="card-body bg-card-bg-white mt-10 md:mt-15 md:col-span-8 md:row-start-1 xl:col-span-4 xl:col-start-2 xl:row-start-1">
           <p className="p-2 text-center">
             <Trans>
               Hey! Ich bin <strong>Luka Jevremovic</strong>, geboren im Jahr
@@ -41,18 +41,24 @@ export default function AboutSection() {
           </p>
         </div>
 
-        {/*
-        <div className="mt-15 flex justify-center items-center xl:col-start-4 xl:col-span-2 xl:row-start-2">
+        <div className="mt-10 md:mt-15 md:col-span-4 md:row-start-1 xl:col-span-2 xl:col-start-7 xl:row-start-1 flex justify-center items-center">
           <img
-            src="/klein-profilbild.jpg"
-            alt="Portrait"
-            className="aboutimg"
+            src="/Bild_rom.png"
+            alt="Portrait in Rom"
+            className="rounded-xl w-full md:w-52 h-auto object-cover"
           />
         </div>
-        */}
+
+        <div className="mt-10 md:mt-15 md:col-span-4 md:row-start-2 xl:col-span-2 xl:col-start-3 xl:row-start-3 flex justify-center items-center">
+          <img
+            src="/Folklor.png"
+            alt="Traditionelle Kleidung"
+            className="rounded-xl w-full md:w-52 h-auto object-cover"
+          />
+        </div>
 
         <div
-          className={`card-body-about mt-15 min-h-[450px] xl:min-h-[290px] xl:col-span-3 xl:col-end-8 xl:row-start-3 md:min-h-[290px] ${activeCard === "hobby" ? "flipped" : ""}`}
+          className={`card-body-about mt-15 min-h-[450px] md:min-h-[290px] md:col-span-8 md:row-start-2 xl:min-h-[290px] xl:col-span-4 xl:col-end-10 xl:row-start-3 ${activeCard === "hobby" ? "flipped" : ""}`}
         >
           <div className="front-card-about bg-card-bg-white p-5">
             <p className="p-2 text-center">
@@ -68,21 +74,22 @@ export default function AboutSection() {
               </Trans>
             </p>
             <button
-              className="btn bg-second text-white hover:bg-btn-hover mt-2 flex justify-center items-center text-center"
+              className="btn bg-second text-white hover:bg-btn-hover mt-2 flex justify-center items-center text-center mx-auto"
               onClick={() => handleFlip("hobby")}
             >
               <Trans>Mehr anzeigen</Trans>
             </button>
           </div>
+
           <div className="back-card-about bg-card-bg-white xl:h-auto p-5 xl:p-3">
             <h2 className="p-2 text-center font-medium text-xl">
               <Trans>Videos</Trans>
             </h2>
-            <div className=" flex flex-col gap-5 2xl:gap-12 xl:flex-row xl:gap-5 md:gap-10 md:flex-row">
+            <div className="flex flex-col gap-5 2xl:gap-12 xl:flex-row xl:gap-5 md:gap-10 md:flex-row justify-center items-center">
               <div>
                 <iframe
                   width="250"
-                  height="auto"
+                  height="140"
                   src="https://www.youtube.com/embed/qRlQnEmyBHs?si=6k8_U5SEKhohkhjv"
                   title="YouTube video von Auftritt 'Kumanovo'"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -92,7 +99,7 @@ export default function AboutSection() {
               <div>
                 <iframe
                   width="250"
-                  height="auto"
+                  height="140"
                   src="https://www.youtube.com/embed/928UoWsOTuk?si=3WLSMy9FI74cn0K4"
                   title="YouTube video von Auftritt 'Kobisnica'"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -101,7 +108,7 @@ export default function AboutSection() {
               </div>
             </div>
             <button
-              className="btn-2 bg-btn-back text-white mt-6 flex justify-center items-center text-center"
+              className="btn-2 bg-btn-back text-white mt-6 flex justify-center items-center text-center mx-auto"
               onClick={() => handleFlip("hobby")}
             >
               <Trans>zurück</Trans>
