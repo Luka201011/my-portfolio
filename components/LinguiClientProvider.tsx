@@ -1,28 +1,24 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import { i18n, Messages } from "@lingui/core";
+import { i18n } from "@lingui/core";
 import { I18nProvider } from "@lingui/react";
 
-type Props = {
-  locale: string;
-  messages: Messages;
-  children: React.ReactNode;
-};
-
 export default function LinguiClientProvider({
+  children,
   locale,
   messages,
-  children,
-}: Props) {
-  const firstRender = useRef(true);
-
-  if (firstRender.current) {
+}: {
+  children: React.ReactNode;
+  locale: string;
+  messages: any;
+}) {
+  const isInitial = useRef(true);
+  if (isInitial.current) {
     i18n.load(locale, messages);
     i18n.activate(locale);
-    firstRender.current = false;
+    isInitial.current = false;
   }
-
   useEffect(() => {
     i18n.load(locale, messages);
     i18n.activate(locale);

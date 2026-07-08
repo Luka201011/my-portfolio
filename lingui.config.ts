@@ -7,9 +7,7 @@ export default defineConfig({
   catalogs: [
     {
       path: "src/locales/{locale}/messages",
-      // Sucht überall im Projekt nach .ts, .tsx, .js, .jsx Dateien
       include: ["."],
-      // Ignoriert Ordner, in denen ohnehin kein Quellcode von dir liegt
       exclude: [
         "**/node_modules/**",
         "**/.next/**",

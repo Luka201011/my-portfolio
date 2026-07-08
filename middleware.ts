@@ -1,29 +1,25 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 
-// Unterstützte Sprachen
-const locales = ["de", "en"];
-// Start-Sprache (Standardmäßig auf Deutsch)
-const defaultLocale = "de";
+const LOCALES = ["de", "en"];
+const DEFAULT_LOCALE = "de";
 
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
-
-  // 1. Prüfen, ob die URL schon mit /de oder /en anfängt
-  const pathnameHasLocale = locales.some(
+  const hasLocale = LOCALES.some(
     (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`,
   );
 
-  // Wenn ja, tun wir nichts und lassen den Nutzer die Seite sehen
-  if (pathnameHasLocale) return;
-
-  // 2. Wenn keine Sprache in der URL ist (z.B. nur /), leiten wir auf /de weiter
-  request.nextUrl.pathname = `/${defaultLocale}${pathname}`;
-  return NextResponse.redirect(request.nextUrl);
+  if (hasLocale) {
+    return NextResponse.next();
+  }
+  const targetPath =
+    pathname === "/" ? `/${DEFAULT_LOCALE}` : `/${DEFAULT_LOCALE}${pathname}`;
+  const redirectUrl = new URL(targetPath, request.url);
+  return NextResponse.redirect(redirectUrl);
 }
 
 export const config = {
-  // Wichtig: Verhindert, dass die Middleware interne Next.js-Dateien oder Bilder umleitet
   matcher: [
     "/((?!api|_next/static|_next/image|favicon.ico|.*\\.(?:png|jpg|jpeg|gif|svg|webp|ico|pdf|txt|xml|woff|woff2|ttf|css|js)$).*)",
   ],
