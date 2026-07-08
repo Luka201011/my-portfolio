@@ -17,7 +17,6 @@ const MainNav: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
 
-  // Erkennen, ob wir gerade auf Englisch (/en) sind, sonst greift Deutsch (/de)
   const isEN = pathname.startsWith("/en");
   const currentLocalePrefix = isEN ? "/en" : "/de";
 

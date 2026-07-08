@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import "../globals.css"; // Zeigt auf app/globals.css
+import "../globals.css";
 import LinguiClientProvider from "@/components/LinguiClientProvider";
 import { getMessages } from "../i18n";
 import MainNav from "@/components/navigation/mainNav";
