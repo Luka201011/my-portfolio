@@ -31,6 +31,25 @@ const MainNav: React.FC = () => {
     }
   };
 
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    const href = e.currentTarget.getAttribute("href");
+    if (href?.includes("#")) {
+      const [path, fragment] = href.split("#");
+      const currentPath = pathname.split("#")[0];
+
+      if (path === currentPath || path === "") {
+        e.preventDefault();
+        setTimeout(() => {
+          const element = document.getElementById(fragment);
+          if (element) {
+            element.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        }, 0);
+      }
+    }
+    setTimeout(() => setIsOpen(false), 300);
+  };
+
   return (
     <nav id="Navigation" className="w-full bg-card-border">
       <div className="flex items-center justify-between px-6 py-3">
@@ -66,6 +85,7 @@ const MainNav: React.FC = () => {
           <li>
             <Link
               href={`${currentLocalePrefix}#Navigation`}
+              onClick={handleNavClick}
               className="text-white font-medium"
             >
               <Trans>Home</Trans>
@@ -74,6 +94,7 @@ const MainNav: React.FC = () => {
           <li>
             <Link
               href={`${currentLocalePrefix}#about`}
+              onClick={handleNavClick}
               className="text-white font-medium"
             >
               <Trans>Über mich</Trans>
@@ -82,6 +103,7 @@ const MainNav: React.FC = () => {
           <li>
             <Link
               href={`${currentLocalePrefix}#competences`}
+              onClick={handleNavClick}
               className="text-white font-medium"
             >
               <Trans>Kompetenzen</Trans>
@@ -90,6 +112,7 @@ const MainNav: React.FC = () => {
           <li>
             <Link
               href={`${currentLocalePrefix}#projects`}
+              onClick={handleNavClick}
               className="text-white font-medium"
             >
               <Trans>Projekte</Trans>
@@ -98,6 +121,7 @@ const MainNav: React.FC = () => {
           <li>
             <Link
               href={`${currentLocalePrefix}#contact`}
+              onClick={handleNavClick}
               className="text-white font-medium"
             >
               <Trans>Kontakt</Trans>
@@ -144,7 +168,7 @@ const MainNav: React.FC = () => {
           <li>
             <Link
               href={`${currentLocalePrefix}#Navigation`}
-              onClick={() => setIsOpen(false)}
+              onClick={handleNavClick}
               className="block py-3 text-white font-medium border-b border-white/20"
             >
               <Trans>Home</Trans>
@@ -153,7 +177,7 @@ const MainNav: React.FC = () => {
           <li>
             <Link
               href={`${currentLocalePrefix}#about`}
-              onClick={() => setIsOpen(false)}
+              onClick={handleNavClick}
               className="block py-3 text-white font-medium border-b border-white/20"
             >
               <Trans>Über mich</Trans>
@@ -162,7 +186,7 @@ const MainNav: React.FC = () => {
           <li>
             <Link
               href={`${currentLocalePrefix}#competences`}
-              onClick={() => setIsOpen(false)}
+              onClick={handleNavClick}
               className="block py-3 text-white font-medium border-b border-white/20"
             >
               <Trans>Kompetenzen</Trans>
@@ -171,7 +195,7 @@ const MainNav: React.FC = () => {
           <li>
             <Link
               href={`${currentLocalePrefix}#projects`}
-              onClick={() => setIsOpen(false)}
+              onClick={handleNavClick}
               className="block py-3 text-white font-medium border-b border-white/20"
             >
               <Trans>Projekte</Trans>
@@ -180,7 +204,7 @@ const MainNav: React.FC = () => {
           <li>
             <Link
               href={`${currentLocalePrefix}#contact`}
-              onClick={() => setIsOpen(false)}
+              onClick={handleNavClick}
               className="block py-3 text-white font-medium"
             >
               <Trans>Kontakt</Trans>

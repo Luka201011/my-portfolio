@@ -14,7 +14,7 @@ export default function AboutSection() {
   return (
     <section id="about" className="mt-10 lg:mt-45">
       <div>
-        <h2 className="text-center text-4xl font-bold">
+        <h2 className="text-center text-4xl p-4 font-bold">
           <Trans>Über mich</Trans>
         </h2>
       </div>

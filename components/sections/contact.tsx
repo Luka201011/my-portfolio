@@ -12,7 +12,7 @@ export default function ContactSection() {
   return (
     <section id="contact" className="mt-30 w-full">
       <div>
-        <h2 className="text-center text-4xl font-bold mb-10 xl:mb-20">
+        <h2 className="text-center text-4xl p-4 font-bold mb-10 xl:mb-20">
           <Trans>Kontakt</Trans>
         </h2>
       </div>

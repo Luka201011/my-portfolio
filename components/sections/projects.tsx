@@ -11,7 +11,7 @@ export default function ProjectsSection() {
   return (
     <section id="projects" className="mt-30">
       <div>
-        <h2 className="text-center text-4xl font-bold">
+        <h2 className="text-center text-4xl p-4 font-bold">
           <Trans>Projekte</Trans>
         </h2>
       </div>

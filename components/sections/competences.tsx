@@ -54,7 +54,7 @@ export default function CompetencesSection() {
   return (
     <section id="competences" className="mt-30">
       <div>
-        <h2 className="text-center text-4xl font-bold">
+        <h2 className="text-center text-4xl p-4 font-bold">
           <Trans>Kompetenzen</Trans>
         </h2>
       </div>
