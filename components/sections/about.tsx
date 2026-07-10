@@ -74,7 +74,7 @@ export default function AboutSection() {
               </Trans>
             </p>
             <button
-              className="btn bg-second text-white hover:bg-btn-hover mt-2 flex justify-center items-center text-center mx-auto"
+              className="btn bg-second text-white mt-2 flex justify-center items-center text-center mx-auto transition-colors duration-200 hover:bg-btn-hover"
               onClick={() => handleFlip("hobby")}
             >
               <Trans>Mehr anzeigen</Trans>
