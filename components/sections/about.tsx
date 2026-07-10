@@ -19,7 +19,7 @@ export default function AboutSection() {
         </h2>
       </div>
       <div className="pl-7 pr-7 gap-6 md:grid md:grid-cols-12 xl:grid xl:grid-cols-10">
-        <div className="card-body bg-card-bg-white mt-10 md:mt-15 md:col-span-8 md:row-start-1 xl:col-span-4 xl:col-start-2 xl:row-start-1">
+        <div className="card-body bg-card-bg-white mt-5 md:mt-10 md:col-span-8 md:row-start-1 xl:col-span-4 xl:col-start-2 xl:row-start-1">
           <p className="p-2 text-center">
             <Trans>
               Hey! Ich bin <strong>Luka Jevremovic</strong>, geboren im Jahr
@@ -41,7 +41,7 @@ export default function AboutSection() {
           </p>
         </div>
 
-        <div className="mt-10 md:mt-15 md:col-span-4 md:row-start-1 xl:col-span-2 xl:col-start-7 xl:row-start-1 flex justify-center items-center">
+        <div className="mt-5 md:mt-10 md:col-span-4 md:row-start-1 xl:col-span-2 xl:col-start-7 xl:row-start-1 flex justify-center items-center">
           <img
             src="/Bild_rom.png"
             alt="Portrait in Rom"
@@ -49,7 +49,7 @@ export default function AboutSection() {
           />
         </div>
 
-        <div className="mt-10 md:mt-15 md:col-span-4 md:row-start-2 xl:col-span-2 xl:col-start-3 xl:row-start-3 flex justify-center items-center">
+        <div className="md:col-span-4 md:row-start-2 xl:col-span-2 xl:col-start-3 xl:row-start-3 flex justify-center items-center">
           <img
             src="/Folklor.png"
             alt="Traditionelle Kleidung"
@@ -58,7 +58,7 @@ export default function AboutSection() {
         </div>
 
         <div
-          className={`card-body-about mt-15 min-h-[450px] md:min-h-[290px] md:col-span-8 md:row-start-2 xl:min-h-[290px] xl:col-span-4 xl:col-end-10 xl:row-start-3 ${activeCard === "hobby" ? "flipped" : ""}`}
+          className={`card-body-about min-h-[450px] md:min-h-[290px] md:col-span-8 md:row-start-2 xl:min-h-[290px] xl:col-span-4 xl:col-end-10 xl:row-start-3 ${activeCard === "hobby" ? "flipped" : ""}`}
         >
           <div className="front-card-about bg-card-bg-white p-5">
             <p className="p-2 text-center">
