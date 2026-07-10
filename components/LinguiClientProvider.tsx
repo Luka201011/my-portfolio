@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 import { i18n } from "@lingui/core";
 import { I18nProvider } from "@lingui/react";
 
@@ -13,12 +13,6 @@ export default function LinguiClientProvider({
   locale: string;
   messages: any;
 }) {
-  const isInitial = useRef(true);
-  if (isInitial.current) {
-    i18n.load(locale, messages);
-    i18n.activate(locale);
-    isInitial.current = false;
-  }
   useEffect(() => {
     i18n.load(locale, messages);
     i18n.activate(locale);
