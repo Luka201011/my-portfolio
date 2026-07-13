@@ -53,19 +53,6 @@ export default function ContactSection() {
               </div>
               <div className="flex items-center gap-4 mt-3 w-full">
                 <img
-                  src="/mail.png"
-                  alt="Mail Icon"
-                  className="contact-icon w-6 h-6 object-contain"
-                />
-                <a
-                  href="mailto:luka.jevremovic@swisscom.com"
-                  className="underline break-all"
-                >
-                  luka.jevremovic@swisscom.com
-                </a>
-              </div>
-              <div className="flex items-center gap-4 mt-3 w-full">
-                <img
                   src="/biografie.png"
                   alt="Computer Icon Intranet"
                   className="contact-icon w-6 h-6 object-contain"
@@ -108,15 +95,10 @@ export default function ContactSection() {
               </div>
               <div className="mt-3 w-full">
                 <p>
-                  <strong>Host:</strong> John Riordan
-                </p>
-              </div>
-              <div className="mt-3 w-full">
-                <p>
                   <Trans>
                     <strong>Aktuelles Projekt:</strong>
                   </Trans>{" "}
-                  Apps Team
+                  Team Halo
                 </p>
               </div>
               <div className="mt-3 w-full">
