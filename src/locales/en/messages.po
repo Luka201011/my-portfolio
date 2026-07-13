@@ -22,18 +22,29 @@ msgid "<0>Schultage:</0>"
 msgstr "<0>School days:</0>"
 
 #: components/sections/projects.tsx
-msgid "<0>Taschenrechner:</0>In einer Gruppenarbeit entwickelte ich mit meinen "
+msgid "<0>Taschenrechner:</0> In einer Gruppenarbeit entwickelte ich mit meinen "
 "Teamkollegen einen einfachen Taschenrechner als Web-Applikation. Dabei "
 "übernahm ich die Implementierung der Grundfunktionen wie Addition, "
 "Subtraktion, Multiplikation und Division."
-msgstr "<0>Calculator:</0> As part of a group project, my teammates and I "
-"developed asimple calculator as a web application. I was responsible "
-"forimplementing the basic functions such as addition,subtraction, "
-"multiplication, and division."
+msgstr ""
+
+#: components/sections/projects.tsx
+#~ msgid "<0>Taschenrechner:</0>In einer Gruppenarbeit entwickelte ich mit meinen "
+#~ "Teamkollegen einen einfachen Taschenrechner als Web-Applikation. Dabei "
+#~ "übernahm ich die Implementierung der Grundfunktionen wie Addition, "
+#~ "Subtraktion, Multiplikation und Division."
+#~ msgstr "<0>Calculator:</0> As part of a group project, my teammates and I "
+#~ "developed asimple calculator as a web application. I was responsible "
+#~ "forimplementing the basic functions such as addition,subtraction, "
+#~ "multiplication, and division."
 
 #: app/[locale]/page.tsx
-msgid "1. Lehrjahr"
-msgstr "First year"
+#~ msgid "1. Lehrjahr"
+#~ msgstr "First year"
+
+#: app/[locale]/page.tsx
+msgid "2. Lehrjahr"
+msgstr "second year"
 
 #: components/sections/contact.tsx
 msgid "Aktueller Arbeitsort"
@@ -113,20 +124,31 @@ msgstr "Hey! I'm <0>Luka Jevremovic</0>, born in 2010, and I havea great "
 "<5>business informatics or cybersecurity</5>."
 
 #: app/[locale]/page.tsx
-msgid "Ich bin im ersten Lehrjahr als Applikationsentwickler bei Swisscom "
+msgid "Ich bin im zweiten Lehrjahr als Applikationsentwickler bei Swisscom "
 "tätig. Es freut mich, dass du auf meine Website bist und wünsche dir "
 "viel Spass beim Lesen."
-msgstr "I am currently in my first year of training as an application developer "
-"at Swisscom. I'm glad you've visited my website and wish you an "
-"enjoyable time reading through it."
+msgstr "I am currently in my second year of training as an application "
+"developer at Swisscom. I'm glad you've visited my website and wish you "
+"an enjoyable time reading through it."
 
 #: components/sections/projects.tsx
 msgid "Ich habe diese Portfolio Website erstellt."
 msgstr " I created this portfolio website."
 
 #: components/sections/projects.tsx
+msgid "Ich habe eine Memory App entwickelt."
+msgstr " I have create a Memory App."
+
+#: components/sections/projects.tsx
 msgid "Ich habe eine Portfolio Website erstellt."
 msgstr " I created a portfolio website."
+
+#: components/sections/projects.tsx
+msgid "Ich hatte die Gelegenheit, aktiv an einem realen Projekt von Swisscom "
+"mitzuwirken und dabei wertvolle Praxiserfahrung in der "
+"Frontend-Entwicklung zu sammeln."
+msgstr "I had the chance to actively work on a real Swisscom project andgain "
+"valuable experience in frontend development."
 
 #: components/sections/projects.tsx
 msgid "In den First Steps wurden mir die grundlegenden Kenntnisse und "
@@ -149,16 +171,19 @@ msgid "In meiner <0>Freizeit</0> verbringe ich viel Zeit <1>draussen mit "
 "serbischer Volkstänze</2>, da es mir Spass macht und mir hilft, <3>meine "
 "Kultur zu pflegen und Freundschaften</3> aufzubauen. Zusätzlich spiele "
 "ich <4>gerne Basketball.</4>"
-msgstr  "In my <0>free time</0>, I spend a lot of time"
-"<1>outdoors with friends</1> and enjoy being active."
-"I especially like <2>dancing Serbian folk dances</2>,"
-"because it’s fun and helps me"
-"<3>stay connected to my culture and build friendships</3>."
-"Additionally, I <4>enjoy playing basketball.</4>"
+msgstr "In my <0>free time</0>, I spend a lot of time<1>outdoors with "
+"friends</1> and enjoy being active.I especially like <2>dancing Serbian "
+"folk dances</2>,because it’s fun and helps me<3>stay connected to my "
+"culture and build friendships</3>.Additionally, I <4>enjoy playing "
+"basketball.</4>"
 
 #: app/[locale]/page.tsx
 msgid "Informatiker"
 msgstr "Computer Scientist"
+
+#: components/sections/projects.tsx
+msgid "Kommt bald"
+msgstr "come soon"
 
 #: components/sections/competences.tsx
 msgid "Kompetenzen"

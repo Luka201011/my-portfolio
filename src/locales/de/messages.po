@@ -27,18 +27,32 @@ msgid "<0>Schultage:</0>"
 msgstr "<0>Schultage:</0>"
 
 #: components/sections/projects.tsx
-msgid "<0>Taschenrechner:</0>In einer Gruppenarbeit entwickelte ich mit meinen "
+msgid "<0>Taschenrechner:</0> In einer Gruppenarbeit entwickelte ich mit meinen "
 "Teamkollegen einen einfachen Taschenrechner als Web-Applikation. Dabei "
 "übernahm ich die Implementierung der Grundfunktionen wie Addition, "
 "Subtraktion, Multiplikation und Division."
-msgstr "<0>Taschenrechner:</0>In einer Gruppenarbeit entwickelte ich mit meinen "
-"Teamkollegen einen einfachen Taschenrechner als Web-Applikation. Dabei "
-"übernahm ich die Implementierung der Grundfunktionen wie Addition, "
-"Subtraktion, Multiplikation und Division."
+msgstr "<0>Taschenrechner:</0> In einer Gruppenarbeit entwickelte ich mit "
+"meinen Teamkollegen einen einfachen Taschenrechner als Web-Applikation. "
+"Dabei übernahm ich die Implementierung der Grundfunktionen wie "
+"Addition, Subtraktion, Multiplikation und Division."
+
+#: components/sections/projects.tsx
+#~ msgid "<0>Taschenrechner:</0>In einer Gruppenarbeit entwickelte ich mit meinen "
+#~ "Teamkollegen einen einfachen Taschenrechner als Web-Applikation. Dabei "
+#~ "übernahm ich die Implementierung der Grundfunktionen wie Addition, "
+#~ "Subtraktion, Multiplikation und Division."
+#~ msgstr "<0>Taschenrechner:</0>In einer Gruppenarbeit entwickelte ich mit meinen "
+#~ "Teamkollegen einen einfachen Taschenrechner als Web-Applikation. Dabei "
+#~ "übernahm ich die Implementierung der Grundfunktionen wie Addition, "
+#~ "Subtraktion, Multiplikation und Division."
 
 #: app/[locale]/page.tsx
-msgid "1. Lehrjahr"
-msgstr "1. Lehrjahr"
+#~ msgid "1. Lehrjahr"
+#~ msgstr "1. Lehrjahr"
+
+#: app/[locale]/page.tsx
+msgid "2. Lehrjahr"
+msgstr "2. Lehrjahr"
 
 #: components/sections/contact.tsx
 msgid "Aktueller Arbeitsort"
@@ -120,10 +134,18 @@ msgstr "Hey! Ich bin <0>Luka Jevremovic</0>, geboren im Jahr 2010, und habe "
 "absolvieren."
 
 #: app/[locale]/page.tsx
-msgid "Ich bin im ersten Lehrjahr als Applikationsentwickler bei Swisscom "
+#~ msgid "Ich bin im ersten Lehrjahr als Applikationsentwickler bei Swisscom "
+#~ "tätig. Es freut mich, dass du auf meine Website bist und wünsche dir "
+#~ "viel Spass beim Lesen."
+#~ msgstr "Ich bin im ersten Lehrjahr als Applikationsentwickler bei Swisscom "
+#~ "tätig. Es freut mich, dass du auf meine Website bist und wünsche dir "
+#~ "viel Spass beim Lesen."
+
+#: app/[locale]/page.tsx
+msgid "Ich bin im zweiten Lehrjahr als Applikationsentwickler bei Swisscom "
 "tätig. Es freut mich, dass du auf meine Website bist und wünsche dir "
 "viel Spass beim Lesen."
-msgstr "Ich bin im ersten Lehrjahr als Applikationsentwickler bei Swisscom "
+msgstr "Ich bin im zweiten Lehrjahr als Applikationsentwickler bei Swisscom "
 "tätig. Es freut mich, dass du auf meine Website bist und wünsche dir "
 "viel Spass beim Lesen."
 
@@ -132,8 +154,26 @@ msgid "Ich habe diese Portfolio Website erstellt."
 msgstr "Ich habe diese Portfolio Website erstellt."
 
 #: components/sections/projects.tsx
+msgid "Ich habe eine Memory App entwickelt."
+msgstr "Ich habe eine Memory App entwickelt."
+
+#: components/sections/projects.tsx
 msgid "Ich habe eine Portfolio Website erstellt."
 msgstr "Ich habe eine Portfolio Website erstellt."
+
+#: components/sections/projects.tsx
+#~ msgid "Ich hatte die Chance bei einem richtigen Projekt von swisscom "
+#~ "mitzuwirken. Ich durfte am Frontend arbeiten."
+#~ msgstr "Ich hatte die Chance bei einem richtigen Projekt von swisscom "
+#~ "mitzuwirken. Ich durfte am Frontend arbeiten."
+
+#: components/sections/projects.tsx
+msgid "Ich hatte die Gelegenheit, aktiv an einem realen Projekt von Swisscom "
+"mitzuwirken und dabei wertvolle Praxiserfahrung in der "
+"Frontend-Entwicklung zu sammeln."
+msgstr "Ich hatte die Gelegenheit, aktiv an einem realen Projekt von Swisscom "
+"mitzuwirken und dabei wertvolle Praxiserfahrung in der "
+"Frontend-Entwicklung zu sammeln."
 
 #: components/sections/projects.tsx
 msgid "In den First Steps wurden mir die grundlegenden Kenntnisse und "
@@ -166,6 +206,10 @@ msgstr "In meiner <0>Freizeit</0> verbringe ich viel Zeit <1>draussen mit "
 #: app/[locale]/page.tsx
 msgid "Informatiker"
 msgstr "Informatiker"
+
+#: components/sections/projects.tsx
+msgid "Kommt bald"
+msgstr "Kommt bald"
 
 #: components/sections/competences.tsx
 msgid "Kompetenzen"

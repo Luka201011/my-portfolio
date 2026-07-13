@@ -30,16 +30,16 @@ export default function Home() {
               <Trans>Applikationsentwickler</Trans>
             </h2>
             <h1 className="font-bold text-2xl xl:text-4xl">
-              <Trans>1. Lehrjahr</Trans>
+              <Trans>2. Lehrjahr</Trans>
             </h1>
           </div>
         </div>
         <div className="mx-auto  text-center p-8 mt-8 xl:mt-10 xl:w-100 xl:text-xl md:w-80">
           <p>
             <Trans>
-              Ich bin im ersten Lehrjahr als Applikationsentwickler bei Swisscom
-              tätig. Es freut mich, dass du auf meine Website bist und wünsche
-              dir viel Spass beim Lesen.
+              Ich bin im zweiten Lehrjahr als Applikationsentwickler bei
+              Swisscom tätig. Es freut mich, dass du auf meine Website bist und
+              wünsche dir viel Spass beim Lesen.
             </Trans>
           </p>
         </div>
