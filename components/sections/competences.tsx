@@ -59,7 +59,7 @@ export default function CompetencesSection() {
         </h2>
       </div>
 
-      <div className="flex flex-col xl:grid xl:grid-cols-3 md:grid md:grid-cols-2 gap-8 justify-center items-center mt-20 px-7">
+      <div className="flex flex-col xl:grid xl:grid-cols-3 md:grid md:grid-cols-2 gap-8 justify-center items-center mt-18 px-7">
         {competences.map((comp) => (
           <div
             key={comp.id}
