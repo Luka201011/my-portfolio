@@ -1,6 +1,12 @@
 "use client";
 import { useState } from "react";
 import { Trans } from "@lingui/react/macro";
+import Image from "next/image";
+import { useRef } from "react";
+
+import request from "../../public/SDMR/request.png";
+import faq from "../../public/SDMR/faq.png";
+import nav from "../../public/SDMR/nav.png";
 
 export default function ProjectsSection() {
   const [activeCard, setActiveCard] = useState<string | null>(null);
@@ -13,8 +19,22 @@ export default function ProjectsSection() {
     }
   };
 
+  const sliderRef = useRef<HTMLDivElement | null>(null);
+
+  const scrollToSlide = (index: number) => {
+    if (sliderRef.current) {
+      const slideWidth = sliderRef.current.offsetWidth;
+      sliderRef.current.scrollTo({
+        left: slideWidth * index,
+        behavior: "smooth",
+      });
+    }
+  };
+
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
   return (
-    <section id="projects" className="mt-30">
+    <section id="projects" className="mt-28">
       <div>
         <h2 className="text-center text-4xl p-4 font-bold">
           <Trans>Projekte</Trans>
@@ -32,7 +52,7 @@ export default function ProjectsSection() {
             <div className="title-projects-line bg-second"></div>
             <div>
               <p>
-                <strong>Host:</strong> Sven waser
+                <strong>Host:</strong> Sven Waser
               </p>
             </div>
             <div>
@@ -121,7 +141,18 @@ export default function ProjectsSection() {
               </p>
               <p>
                 <strong>Memory App:</strong>{" "}
-                <Trans>Ich habe eine Memory App entwickelt.</Trans>
+                <Trans>Ich habe eine Memory App entwickelt. </Trans>
+              </p>
+              <p>
+                <strong>Github:</strong>{" "}
+                <a
+                  href="https://luka201011.github.io/memory-app/"
+                  id="Github-Memory-App"
+                  target="_blank"
+                  className="underline text-second"
+                >
+                  Memory App
+                </a>
               </p>
               <p>
                 <strong>SDMR Project:</strong>{" "}
@@ -131,6 +162,68 @@ export default function ProjectsSection() {
                   der Frontend-Entwicklung zu sammeln.
                 </Trans>
               </p>
+              <p>
+                <strong>
+                  <Trans>Bilder:</Trans>
+                </strong>
+              </p>
+              <div className="slider-wrapper bg-bg-akcent relative w-full max-w-md mx-auto overflow-hidden rounded-2xl shadow-lg mt-4">
+                <div className="slider" ref={sliderRef}>
+                  <div
+                    className="slide-item cursor-pointer"
+                    onClick={() => setSelectedImage(request.src)}
+                  >
+                    <Image
+                      src={request}
+                      width={500}
+                      height={300}
+                      className="w-full h-full object-cover"
+                      alt="Project Image 1"
+                    />
+                  </div>
+                  <div
+                    className="slide-item cursor-pointer"
+                    onClick={() => setSelectedImage(faq.src)}
+                  >
+                    <Image
+                      src={faq}
+                      width={500}
+                      height={300}
+                      className="w-full h-full object-cover"
+                      alt="Project Image 2"
+                    />
+                  </div>
+                  <div
+                    className="slide-item cursor-pointer"
+                    onClick={() => setSelectedImage(nav.src)}
+                  >
+                    <Image
+                      src={nav}
+                      width={500}
+                      height={300}
+                      className="w-full h-full object-cover"
+                      alt="Project Image 3"
+                    />
+                  </div>
+                </div>
+                <div className="slider-nav gap-2 flex absolute bottom-4 left-1/2 transform -translate-x-1/2 z-10">
+                  <button
+                    onClick={() => scrollToSlide(0)}
+                    className="w-3 h-3 rounded-full bg-black hover:bg-white transition-all shadow-md focus:outline-none"
+                    aria-label="Slide 1"
+                  />
+                  <button
+                    onClick={() => scrollToSlide(1)}
+                    className="w-3 h-3 rounded-full bg-black hover:bg-white transition-all shadow-md focus:outline-none"
+                    aria-label="Slide 2"
+                  />
+                  <button
+                    onClick={() => scrollToSlide(2)}
+                    className="w-3 h-3 rounded-full bg-black hover:bg-white transition-all shadow-md focus:outline-none"
+                    aria-label="Slide 3"
+                  />
+                </div>
+              </div>
             </div>
             <button
               className="btn-2 bg-btn-back text-white mt-8 flex justify-center items-center text-center"
@@ -222,7 +315,7 @@ export default function ProjectsSection() {
         </div>
 
         {/* First Steps */}
-        <div className="card-body-project bg-card-bg-white text-center mt-10 p-10 h-[450px] xl:h-[320px] md:h-[320px] flex flex-col items-center justify-center">
+        <div className="card-body-project bg-card-bg-white text-center mt-10 p-5 h-[450px] xl:h-[320px] md:h-[320px] flex flex-col items-center justify-start">
           <div>
             <h2 className="text-lg font-bold">First Steps 2025 NEX-14</h2>
           </div>
@@ -247,6 +340,27 @@ export default function ProjectsSection() {
           </div>
         </div>
       </div>
+
+      {selectedImage && (
+        <div
+          className="fixed inset-0 bg-bg-akcent z-50 flex items-center justify-center p-4"
+          onClick={() => setSelectedImage(null)}
+        >
+          <button
+            className="absolute top-6 right-8 text-black hover:text-second text-4xl font-light"
+            onClick={() => setSelectedImage(null)}
+          >
+            ✕
+          </button>
+          <div className="relative max-w-5xl max-h-[85vh] w-full h-full flex items-center justify-center">
+            <img
+              src={selectedImage}
+              alt="Projektansicht Vollbild"
+              className="max-w-full max-h-[80vh] object-contain rounded-lg border border-white"
+            />
+          </div>
+        </div>
+      )}
     </section>
   );
 }

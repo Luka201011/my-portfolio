@@ -55,6 +55,10 @@ msgid "Applikationsentwickler"
 msgstr "Application Developer"
 
 #: components/sections/projects.tsx
+msgid "Bilder:"
+msgstr "Pictures:"
+
+#: components/sections/projects.tsx
 msgid "Das Apps Team gab mir einen praxisnahen Einblick in die Entwicklung "
 "moderner Webapplikationen. Mit Technologien wie Next.js konnte ich mein "
 "technisches Wissen erweitern und eigene Komponenten entwickeln. Zudem "
@@ -136,8 +140,8 @@ msgid "Ich habe diese Portfolio Website erstellt."
 msgstr " I created this portfolio website."
 
 #: components/sections/projects.tsx
-msgid "Ich habe eine Memory App entwickelt."
-msgstr " I have create a Memory App."
+#~ msgid "Ich habe eine Memory App entwickelt."
+#~ msgstr " I have create a Memory App."
 
 #: components/sections/projects.tsx
 msgid "Ich habe eine Portfolio Website erstellt."

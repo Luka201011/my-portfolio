@@ -63,11 +63,9 @@ export default function CompetencesSection() {
         {competences.map((comp) => (
           <div
             key={comp.id}
-            className={`card-body-competences w-full mt-8 xl:mt-0 ${
-              comp.id !== "html" ? "" : ""
-            } ${!comp.alwaysVisible && !areCardsVisible ? "hidden" : ""} ${
-              activeCard === comp.id ? "flipped" : ""
-            }`}
+            className={`card-body-competences w-full mt-8 xl:mt-0 cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-lg ${
+              !comp.alwaysVisible && !areCardsVisible ? "hidden" : ""
+            } ${activeCard === comp.id ? "flipped" : ""}`}
             onClick={() => handleFlip(comp.id)}
           >
             <div className="front-card-competences bg-card-bg-white">

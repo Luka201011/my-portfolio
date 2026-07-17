@@ -45,7 +45,7 @@ export default function AboutSection() {
           </p>
         </div>
 
-        <div className="mt-5 md:mt-10 md:col-span-4 md:row-start-1 xl:col-span-2 xl:col-start-7 xl:row-start-1 flex justify-center items-center">
+        <div className="mt-8 md:mt-10 md:col-span-4 md:row-start-1 xl:col-span-2 xl:col-start-7 xl:row-start-1 flex justify-center items-center">
           <Image
             src={romImage}
             alt="Portrait in Rom"
@@ -53,7 +53,7 @@ export default function AboutSection() {
           />
         </div>
 
-        <div className="md:col-span-4 md:row-start-2 xl:col-span-2 xl:col-start-3 xl:row-start-3 flex justify-center items-center">
+        <div className=" mt-8 md:col-span-4 md:row-start-2 xl:col-span-2 xl:col-start-3 xl:row-start-3 flex justify-center items-center">
           <Image
             src={folklorImage}
             alt="Traditionelle Kleidung"
@@ -62,7 +62,7 @@ export default function AboutSection() {
         </div>
 
         <div
-          className={`card-body-about min-h-[450px] md:min-h-[290px] md:col-span-8 md:row-start-2 xl:min-h-[290px] xl:col-span-4 xl:col-end-10 xl:row-start-3 ${activeCard === "hobby" ? "flipped" : ""}`}
+          className={`card-body-about mt-8 min-h-[450px] md:min-h-[290px] md:col-span-8 md:row-start-2 xl:min-h-[290px] xl:col-span-4 xl:col-end-10 xl:row-start-3 ${activeCard === "hobby" ? "flipped" : ""}`}
         >
           <div className="front-card-about bg-card-bg-white p-5">
             <p className="p-2 text-center">
