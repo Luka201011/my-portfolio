@@ -25,5 +25,9 @@ export default function RootLayout({
     return () => document.removeEventListener("click", handleAnchorClick);
   }, []);
 
-  return children;
+  return (
+    <html lang="de">
+      <body>{children}</body>
+    </html>
+  );
 }

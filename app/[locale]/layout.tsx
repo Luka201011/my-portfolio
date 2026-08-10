@@ -8,11 +8,13 @@ import MainNav from "@/components/navigation/mainNav";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
+  display: "swap",
 });
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -31,15 +33,13 @@ export default async function LocaleLayout({
   const messages = await getMessages(locale);
 
   return (
-    <html lang={locale}>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} bg-bg min-h-screen text-text-black antialiased`}
-      >
-        <LinguiClientProvider locale={locale} messages={messages}>
-          <MainNav />
-          {children}
-        </LinguiClientProvider>
-      </body>
-    </html>
+    <div
+      className={`${geistSans.variable} ${geistMono.variable} bg-bg min-h-screen text-text-black antialiased`}
+    >
+      <LinguiClientProvider locale={locale} messages={messages}>
+        <MainNav />
+        {children}
+      </LinguiClientProvider>
+    </div>
   );
 }

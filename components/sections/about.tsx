@@ -94,7 +94,7 @@ export default function AboutSection() {
                 <iframe
                   width="250"
                   height="140"
-                  src="https://www.youtube.com/embed/qRlQnEmyBHs?si=6k8_U5SEKhohkhjv"
+                  src="https://www.youtube-nocookie.com/embed/qRlQnEmyBHs?si=6k8_U5SEKhohkhjv"
                   title="YouTube video von Auftritt 'Kumanovo'"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowFullScreen
@@ -104,7 +104,7 @@ export default function AboutSection() {
                 <iframe
                   width="250"
                   height="140"
-                  src="https://www.youtube.com/embed/928UoWsOTuk?si=3WLSMy9FI74cn0K4"
+                  src="https://www.youtube-nocookie.com/embed/928UoWsOTuk?si=3WLSMy9FI74cn0K4"
                   title="YouTube video von Auftritt 'Kobisnica'"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowFullScreen

@@ -26,7 +26,7 @@ export default function Home() {
               src={profileImage}
               className="rounded-2xl w-3xs h-auto xl:w-xs xl:h-auto 2xl:w-md"
               alt="portrait Luka Jevremovic"
-              loading="eager"
+              priority
             />
           </div>
           <div className="flex-col flex justify-center items-center mt-14 flex-1">
