@@ -112,7 +112,7 @@ export default function AboutSection() {
               </div>
             </div>
             <button
-              className="btn-2 bg-btn-back text-white mt-6 flex justify-center items-center text-center mx-auto"
+              className="btn-2 bg-second text-white mt-6 flex justify-center items-center text-center mx-auto"
               onClick={() => handleFlip("hobby")}
             >
               <Trans>zurück</Trans>
