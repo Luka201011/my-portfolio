@@ -146,8 +146,16 @@ body {
   cursor: pointer;
 }
 
+.card-body-competences:hover {
+  transform: translateY(-0.5rem);
+}
+
 .card-body-competences.flipped {
   transform: rotateY(180deg);
+}
+
+.card-body-competences.flipped:hover {
+  transform: rotateY(180deg) translateY(-0.5rem);
 }
 
 .front-card-competences,
