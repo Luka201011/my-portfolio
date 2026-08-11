@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import { Trans } from "@lingui/react/macro";
 
 export default function LoginPage() {
   const [code, setCode] = useState("");
@@ -27,7 +28,9 @@ export default function LoginPage() {
           onChange={(e) => setCode(e.target.value)}
           placeholder="Zugangscode eingeben"
         />
-        <button type="submit">Entsperren</button>
+        <button type="submit">
+          <Trans>Entsperren</Trans>
+        </button>
       </form>
     </div>
   );

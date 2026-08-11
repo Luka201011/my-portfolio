@@ -27,14 +27,14 @@ msgid "<0>Schultage:</0>"
 msgstr "<0>Schultage:</0>"
 
 #: components/sections/projects.tsx
-msgid "<0>Taschenrechner:</0> In einer Gruppenarbeit entwickelte ich mit meinen "
-"Teamkollegen einen einfachen Taschenrechner als Web-Applikation. Dabei "
-"übernahm ich die Implementierung der Grundfunktionen wie Addition, "
-"Subtraktion, Multiplikation und Division."
-msgstr "<0>Taschenrechner:</0> In einer Gruppenarbeit entwickelte ich mit "
-"meinen Teamkollegen einen einfachen Taschenrechner als Web-Applikation. "
-"Dabei übernahm ich die Implementierung der Grundfunktionen wie "
-"Addition, Subtraktion, Multiplikation und Division."
+#~ msgid "<0>Taschenrechner:</0> In einer Gruppenarbeit entwickelte ich mit meinen "
+#~ "Teamkollegen einen einfachen Taschenrechner als Web-Applikation. Dabei "
+#~ "übernahm ich die Implementierung der Grundfunktionen wie Addition, "
+#~ "Subtraktion, Multiplikation und Division."
+#~ msgstr "<0>Taschenrechner:</0> In einer Gruppenarbeit entwickelte ich mit "
+#~ "meinen Teamkollegen einen einfachen Taschenrechner als Web-Applikation. "
+#~ "Dabei übernahm ich die Implementierung der Grundfunktionen wie "
+#~ "Addition, Subtraktion, Multiplikation und Division."
 
 #: components/sections/projects.tsx
 #~ msgid "<0>Taschenrechner:</0>In einer Gruppenarbeit entwickelte ich mit meinen "
@@ -95,8 +95,12 @@ msgstr "Das IT-Onboarding-Projekt hat mir erste technische Grundlagen der "
 "den Geschäftsalltag vorbereitet zu sein."
 
 #: components/sections/projects.tsx
-msgid "Das konnte ich alles umsetzten:"
-msgstr "Das konnte ich alles umsetzten:"
+#~ msgid "Das konnte ich alles umsetzten:"
+#~ msgstr "Das konnte ich alles umsetzten:"
+
+#: app/[locale]/login/page.tsx
+msgid "Entsperren"
+msgstr "Entsperren"
 
 #: components/sections/competences.tsx
 msgid "Erweiterte Kenntnisse"
@@ -158,12 +162,12 @@ msgid "Ich habe diese Portfolio Website erstellt."
 msgstr "Ich habe diese Portfolio Website erstellt."
 
 #: components/sections/projects.tsx
-#~ msgid "Ich habe eine Memory App entwickelt."
-#~ msgstr "Ich habe eine Memory App entwickelt."
+msgid "Ich habe eine Memory App entwickelt."
+msgstr "Ich habe eine Memory App entwickelt."
 
 #: components/sections/projects.tsx
-msgid "Ich habe eine Memory App entwickelt. "
-msgstr "Ich habe eine Memory App entwickelt. "
+#~ msgid "Ich habe eine Memory App entwickelt. "
+#~ msgstr "Ich habe eine Memory App entwickelt. "
 
 #: components/sections/projects.tsx
 msgid "Ich habe eine Portfolio Website erstellt."
@@ -198,6 +202,16 @@ msgstr "In den First Steps wurden mir die grundlegenden Kenntnisse und "
 "Arbeitskolleg*innen sowie die Swisscom kennen. Nach den First Steps "
 "fühlte ich mich gut auf das Berufsleben während meiner Ausbildung "
 "vorbereitet."
+
+#: components/sections/projects.tsx
+msgid "In einer Gruppenarbeit entwickelte ich mit meinen Teamkollegen einen "
+"einfachen Taschenrechner als Web-Applikation. Dabei übernahm ich die "
+"Implementierung der Grundfunktionen wie Addition, Subtraktion, "
+"Multiplikation und Division."
+msgstr "In einer Gruppenarbeit entwickelte ich mit meinen Teamkollegen einen "
+"einfachen Taschenrechner als Web-Applikation. Dabei übernahm ich die "
+"Implementierung der Grundfunktionen wie Addition, Subtraktion, "
+"Multiplikation und Division."
 
 #: components/sections/about.tsx
 msgid "In meiner <0>Freizeit</0> verbringe ich viel Zeit <1>draussen mit "
@@ -261,8 +275,8 @@ msgid "Rand Informationen"
 msgstr "Rand Informationen"
 
 #: components/sections/projects.tsx
-msgid "Taschenrechner"
-msgstr "Taschenrechner"
+#~ msgid "Taschenrechner"
+#~ msgstr "Taschenrechner"
 
 #: components/sections/about.tsx
 msgid "Über mich"

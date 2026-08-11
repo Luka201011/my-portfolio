@@ -22,13 +22,6 @@ msgid "<0>Schultage:</0>"
 msgstr "<0>School days:</0>"
 
 #: components/sections/projects.tsx
-msgid "<0>Taschenrechner:</0> In einer Gruppenarbeit entwickelte ich mit meinen "
-"Teamkollegen einen einfachen Taschenrechner als Web-Applikation. Dabei "
-"übernahm ich die Implementierung der Grundfunktionen wie Addition, "
-"Subtraktion, Multiplikation und Division."
-msgstr ""
-
-#: components/sections/projects.tsx
 #~ msgid "<0>Taschenrechner:</0>In einer Gruppenarbeit entwickelte ich mit meinen "
 #~ "Teamkollegen einen einfachen Taschenrechner als Web-Applikation. Dabei "
 #~ "übernahm ich die Implementierung der Grundfunktionen wie Addition, "
@@ -88,8 +81,12 @@ msgstr "The IT onboarding project introduced me to the basic "
 "business life."
 
 #: components/sections/projects.tsx
-msgid "Das konnte ich alles umsetzten:"
-msgstr "I was able to implement all of this:"
+#~ msgid "Das konnte ich alles umsetzten:"
+#~ msgstr "I was able to implement all of this:"
+
+#: app/[locale]/login/page.tsx
+msgid "Entsperren"
+msgstr "unlock"
 
 #: components/sections/competences.tsx
 msgid "Erweiterte Kenntnisse"
@@ -140,8 +137,8 @@ msgid "Ich habe diese Portfolio Website erstellt."
 msgstr " I created this portfolio website."
 
 #: components/sections/projects.tsx
-#~ msgid "Ich habe eine Memory App entwickelt."
-#~ msgstr " I have create a Memory App."
+msgid "Ich habe eine Memory App entwickelt."
+msgstr " I have create a Memory App."
 
 #: components/sections/projects.tsx
 msgid "Ich habe eine Portfolio Website erstellt."
@@ -168,6 +165,16 @@ msgstr "During the First Steps program, I was introduced to thefundamental "
 "my apprenticeship, met my learningcoach, future colleagues, and got to "
 "know Swisscom as a company.After completing the First Steps, I felt "
 "well prepared forprofessional life during my training."
+
+#: components/sections/projects.tsx
+msgid "In einer Gruppenarbeit entwickelte ich mit meinen Teamkollegen einen "
+"einfachen Taschenrechner als Web-Applikation. Dabei übernahm ich die "
+"Implementierung der Grundfunktionen wie Addition, Subtraktion, "
+"Multiplikation und Division."
+msgstr "As part of a group project, my teammates and I developed asimple "
+"calculator as a web application. I was responsible forimplementing the "
+"basic functions such as addition,subtraction, multiplication, and "
+"division."
 
 #: components/sections/about.tsx
 msgid "In meiner <0>Freizeit</0> verbringe ich viel Zeit <1>draussen mit "
@@ -231,8 +238,8 @@ msgid "Rand Informationen"
 msgstr "side information"
 
 #: components/sections/projects.tsx
-msgid "Taschenrechner"
-msgstr " Calculator"
+#~ msgid "Taschenrechner"
+#~ msgstr " Calculator"
 
 #: components/sections/about.tsx
 msgid "Über mich"
