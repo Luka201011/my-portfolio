@@ -9,21 +9,26 @@ export default function LoginPage() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Cookie für 30 Tage setzen
-    document.cookie = `site_access=${code}; path=/; max-age=${60 * 60 * 24 * 30}`;
+    // Cookie für 10 Tage setzen
+    document.cookie = `site_access=${code}; path=/; max-age=${60 * 60 * 24 * 10}`;
     router.push("/");
     router.refresh();
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <input
-        type="password"
-        value={code}
-        onChange={(e) => setCode(e.target.value)}
-        placeholder="Zugangscode eingeben"
-      />
-      <button type="submit">Entsperren</button>
-    </form>
+    <div className="min-h-screen flex items-center justify-center">
+      <form
+        onSubmit={handleSubmit}
+        className="flex flex-row items-center justify-center gap-2"
+      >
+        <input
+          type="password"
+          value={code}
+          onChange={(e) => setCode(e.target.value)}
+          placeholder="Zugangscode eingeben"
+        />
+        <button type="submit">Entsperren</button>
+      </form>
+    </div>
   );
 }

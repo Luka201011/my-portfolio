@@ -3,9 +3,9 @@ import type { NextRequest } from "next/server";
 
 const LOCALES = ["de", "en"];
 const DEFAULT_LOCALE = "de";
-const PASSCODE = "meinGeheimesPasswort123"; // <-- Hier dein Passwort eintragen
+const PASSCODE = "Luka1232026";
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
   // 1. Ausnahmen festlegen: Ausgenommen sind die Login-Seite und API-Routen

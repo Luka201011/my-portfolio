@@ -55,7 +55,7 @@ const PROJECTS: Project[] = [
         title: "Memory App:",
         description: <Trans>Ich habe eine Memory App entwickelt.</Trans>,
         link: {
-          url: "https://luka201011.github.io/memory-app/",
+          url: "https://memory-app-green.vercel.app/",
           label: "Memory App",
         },
       },
@@ -102,7 +102,7 @@ const PROJECTS: Project[] = [
           </Trans>
         ),
         link: {
-          url: "https://luka201011.github.io/Website-Taschenrechner/",
+          url: "https://website-taschenrechner.vercel.app/",
           label: "Taschenrechner",
         },
       },

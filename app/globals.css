@@ -147,7 +147,7 @@ body {
 }
 
 .card-body-competences:hover {
-  transform: translateY(-0.5rem);
+  transform: translateY(-0.3rem);
 }
 
 .card-body-competences.flipped {
@@ -155,7 +155,7 @@ body {
 }
 
 .card-body-competences.flipped:hover {
-  transform: rotateY(180deg) translateY(-0.5rem);
+  transform: rotateY(180deg) translateY(-0.3rem);
 }
 
 .front-card-competences,
